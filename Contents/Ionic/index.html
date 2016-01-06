@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Hybrid App Ionic</title>
+	    <link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+        	<div class="reveal">
+            <div class="slides">
+                <section>
+					<h1>Hello Ionic</h1>
+					<h3>Ionic Framework</h3>
+					<p>
+						<small>Created by <a href="http://ohsekwang.github.io/">OhSeKwang </a><a href="http://mostisoft.com">Mostisoft</a>. Alt + click anywhere to zoom back out.</small>
+					</p>
+				</section>
+
+				<section>
+                <h2>모바일 앱의 종류.</h2>
+                    <ul style="font-size:35px;width:70%">
+                        <li class="fragment">네이티브 앱</li><br/>
+                        <li class="fragment">모바일 웹 (웹앱)</li><br/>
+                        <li class="fragment">하이브리드 앱</li><br/>
+                    </ul>
+				</section>
+                <section>
+                    <h1>네이티브 앱</h1>
+                    <h5>스마트폰에 설치하여 사용하는 앱<h5><br/>
+                        <div style="text-align:left">
+                        <p style="font-size:20px">-  모바일에 최적화된 언어를 사용하여 개발</p>
+                        <p style="font-size:20px">-  앱스토어, 마켓에서 앱을 다운받아 스마트폰에 설치</p>
+                        <p style="font-size:20px">-  스마트폰 모든 기능 활용 가능</p>
+                        <p style="font-size:20px">-  스마트폰 에서 제공하는 서비스를 직접 호출하여 실행하므로 실행속도가 매우 빠르고 안정적</p>
+                        <p style="font-size:20px">-  특정 플랫폼에서만 동작하여 앱스토어를 통해 업데이트가 가능하기 때문에 업데이트가 느리다.</p>
+                        <p style="font-size:20px">-  해당 운영체체나 플랫폼이 다르면 많은 시간과 비용을 감수하여 새롭게 개발해야한다.</p>
+                        </div>
+                </section>
+                
+                <section>
+                    <h2>모바일 웹 (웹앱)</h2>
+                    <h5>스마트폰 브라우저를 통해 사용</h5><br/>
+                    <div style="text-align:left">
+                        <p style="font-size:20px">-  데스크 탑 브라우저에서 보는 웹 페이지를 스마트폰 화면 크기로 축소시킨 것</p>
+                        <p style="font-size:20px">-  HTML, CSS, Javascript, JSP, PHP, ASP, ASP NET등 일반적이고 표준화된 웹 기술로 개발</p>
+                        <p style="font-size:20px">-  풀 브라우징 방식으로 페이지를 이동해 앱에 비해 접속속도가 느림</p>
+                        <p style="font-size:20px">-  모바일 기기의 특성상 이동 중에 서버 접속 장애가 발생할 수 있어 불안정</p>
+                        <p style="font-size:20px">-  애플 앱스토어, 안드로이드 마켓에서 등록, 판매 불가능</p>
+                        <p style="font-size:20px">-  스마트폰의 고유정보 및 하드웨어를 제어 불가능</p>
+                    </div>
+                    
+                </section>
+                
+                <section>
+                    <h2>하이브리드 앱</h2>
+                    <h5>네이티브앱과 모바일 웹의 장점을 결합한 형태</h5><br/>
+                     <div style="text-align:left">
+                         <p style="font-size:20px">-  웹앱을 네이티브 앱으로 포장한 것</p>
+                         <p style="font-size:20px">-  웹 기술로 개발되었지만 모바일에 최적화된 언어로 만드는 네이티브 앱처럼 보이게 하는 것</p>
+                         <p style="font-size:20px">-  네이티브앱의 형태이므로 앱스토어나 마켓에 등록 가능</p>
+                         <p style="font-size:20px">-  모바일의 고유정보를 이용하고 하드웨어 제어 가능</p>
+                         <p style="font-size:20px">-  외부 형태는 네이티브 앱이지만 실제 내부는 모바일 웹앱으로 실행한다.</p>
+                         <p style="font-size:20px">-  별도의 하이브리드 앱 프레임워크 필요</p>
+                         <p style="font-size:20px">-  폰갭(PhoneGap), 앱스프레소(Appspresso), 티타니움(Titanium)</p>
+                </section>
+                    <section>
+                        <h2>앱 비교</h2>
+                         <table style="font-size:30px">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>기간</th>
+                                <th>LOC</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>GWT</td>
+                                <td>3명 x 6개월 = 18MM</td>
+                                <td>17,000</td>
+                            </tr>
+                            <tr>
+                                <td>AngularJS</td>
+                                <td>1명 x 3주 = 0.75MM</td>
+                                <td>1,000</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        
+                    </section>
+                    
+            </div>
+        </div>
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+        
+	</body>
+</html>
