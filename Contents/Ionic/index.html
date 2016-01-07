@@ -1,270 +1,289 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ko">
-	<head>
-		<meta charset="utf-8">
-		<title>Hybrid App Ionic</title>
-	    <link rel="stylesheet" href="../reveal/css/reveal.css">
-		<link rel="stylesheet" href="../reveal/css/theme/black.css" id="theme">
+<head>
+    <meta charset="utf-8">
+    <title>Hybrid App Ionic</title>
+    <link rel="stylesheet" href="../reveal/css/reveal.css">
+    <link rel="stylesheet" href="../reveal/css/theme/black.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-        	<div class="reveal">
-            <div class="slides">
-                <section>
-					<h1>Hello Ionic</h1>
-                    <br/><br/>
-					<p>
-						<small>Created by <a href="http://ohsekwang.github.io/">OhSeKwang </a><a href="http://mostisoft.com">Mostisoft</a>. Alt + click anywhere to zoom back out.</small>
-					</p>
-				</section>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Hello Ionic</h1>
+                <br /><br />
+                <p>
+                    <small>Created by <a href="http://ohsekwang.github.io/">OhSeKwang </a><a href="http://mostisoft.com">Mostisoft</a>. Alt + click anywhere to zoom back out.</small>
+                </p>
+            </section>
 
-				<section>
+            <section>
                 <h2>모바일 앱의 종류.</h2>
-                    <ul style="font-size:35px;width:70%">
-                        <li class="fragment">네이티브 앱</li><br/>
-                        <li class="fragment">모바일 웹 (웹앱)</li><br/>
-                        <li class="fragment">하이브리드 앱</li><br/>
-                    </ul>
-				</section>
-                <section>
-                    <h1>네이티브 앱</h1>
-                    <h5>스마트폰에 설치하여 사용하는 앱<h5><br/>
+                <ul style="font-size:35px;width:70%">
+                    <li class="fragment">네이티브 앱</li>
+                    <br />
+                    <li class="fragment">모바일 웹 (웹앱)</li>
+                    <br />
+                    <li class="fragment">하이브리드 앱</li>
+                    <br />
+                </ul>
+            </section>
+            <section>
+                <h1>네이티브 앱</h1>
+                <h5>
+                    스마트폰에 설치하여 사용하는 앱<h5>
+                        <br />
                         <div style="text-align:left">
-                        <p style="font-size:20px">-  모바일에 최적화된 언어를 사용하여 개발</p>
-                        <p style="font-size:20px">-  앱스토어, 마켓에서 앱을 다운받아 스마트폰에 설치</p>
-                        <p style="font-size:20px">-  스마트폰 모든 기능 활용 가능</p>
-                        <p style="font-size:20px">-  스마트폰 에서 제공하는 서비스를 직접 호출하여 실행하므로 실행속도가 매우 빠르고 안정적</p>
-                        <p style="font-size:20px">-  특정 플랫폼에서만 동작하여 앱스토어를 통해 업데이트가 가능하기 때문에 업데이트가 느림</p>
-                        <p style="font-size:20px">-  해당 운영체체나 플랫폼이 다르면 많은 시간과 비용을 감수하여 새롭게 개발</p>
+                            <p style="font-size:20px">-  모바일에 최적화된 언어를 사용하여 개발</p>
+                            <p style="font-size:20px">-  앱스토어, 마켓에서 앱을 다운받아 스마트폰에 설치</p>
+                            <p style="font-size:20px">-  스마트폰 모든 기능 활용 가능</p>
+                            <p style="font-size:20px">-  스마트폰 에서 제공하는 서비스를 직접 호출하여 실행하므로 실행속도가 매우 빠르고 안정적</p>
+                            <p style="font-size:20px">-  특정 플랫폼에서만 동작하여 앱스토어를 통해 업데이트가 가능하기 때문에 업데이트가 느림</p>
+                            <p style="font-size:20px">-  해당 운영체체나 플랫폼이 다르면 많은 시간과 비용을 감수하여 새롭게 개발</p>
                         </div>
-                </section>
-                
-                <section>
-                    <h2>모바일 웹 (웹앱)</h2>
-                    <h5>스마트폰 브라우저를 통해 사용</h5><br/>
-                    <div style="text-align:left">
-                        <p style="font-size:20px">-  데스크 탑 브라우저에서 보는 웹 페이지를 스마트폰 화면 크기로 축소시킨 것</p>
-                        <p style="font-size:20px">-  HTML, CSS, Javascript, JSP, PHP, ASP, ASP NET등 일반적이고 표준화된 웹 기술로 개발</p>
-                        <p style="font-size:20px">-  풀 브라우징 방식으로 페이지를 이동해 앱에 비해 접속속도가 느림</p>
-                        <p style="font-size:20px">-  모바일 기기의 특성상 이동 중에 서버 접속 장애가 발생할 수 있어 불안정</p>
-                        <p style="font-size:20px">-  애플 앱스토어, 안드로이드 마켓에서 등록, 판매 불가능</p>
-                        <p style="font-size:20px">-  스마트폰의 고유정보 및 하드웨어를 제어 불가능</p>
-                    </div>
-                    
-                </section>
-                
-                <section>
-                    <h2>하이브리드 앱</h2>
-                    <h5>네이티브앱과 모바일 웹의 장점을 결합한 형태</h5><br/>
-                     <div style="text-align:left">
-                         <p style="font-size:20px">-  웹앱을 네이티브 앱으로 포장한 것</p>
-                         <p style="font-size:20px">-  웹 기술로 개발되었지만 모바일에 최적화된 언어로 만드는 네이티브 앱처럼 보이게 하는 것</p>
-                         <p style="font-size:20px">-  네이티브앱의 형태이므로 앱스토어나 마켓에 등록 가능</p>
-                         <p style="font-size:20px">-  모바일의 고유정보를 이용하고 하드웨어 제어 가능</p>
-                         <p style="font-size:20px">-  외부 형태는 네이티브 앱이지만 실제 내부는 모바일 웹앱으로 실행</p>
-                         <p style="font-size:20px">-  별도의 하이브리드 앱 프레임워크 필요</p>
-                         <p style="font-size:20px">-  폰갭(PhoneGap), 앱스프레소(Appspresso), 티타니움(Titanium)</p>
-                    </div>
-                </section>
-                    <section>
-                        <h2>앱 비교</h2>
-                         <table style="font-size:30px;text-align:center">
-                            <thead>
-                            <tr>
-                                <th></th>
-                                <th>네이티브 앱</th>
-                                <th>모바일 웹 (웹앱)</th>
-                                <th>하이브리드 앱</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>단말기 설치</td>
-                                <td>가능</td>
-                                <td>브라우저 이용</td>
-                                <td>가능</td>
-                            </tr>
-                            <tr>
-                                <td>앱스토어 판매</td>
-                                <td>가능</td>
-                                <td>불가능</td>
-                                <td>가능</td>
-                            </tr>
-                                <tr>
-                                <td>업데이트</td>
-                                <td>불편</td>
-                                <td>쉬움</td>
-                                <td>불편</td>
-                            </tr>
-                            <tr>
-                                <td>단말기 기능 사용</td>
-                                <td>모두 가능</td>
-                                <td>사용 불가</td>
-                                <td>가능</td>
-                            </tr>
-                                 <tr>
-                                <td>반응속도</td>
-                                <td>가장빠름</td>
-                                <td>빠름</td>
-                                <td>약간느림</td>
-                            </tr>
-                                  <tr>
-                                <td>개발 환경</td>
-                                <td>각 스마트폰</td>
-                                <td>표준</td>
-                                <td>표준</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </section>
-                    <section>
-                    <h2>하이브리드 앱</h2>
-                    <h6>적합한 분야<h6><br/>
+            </section>
+
+            <section>
+                <h2>모바일 웹 (웹앱)</h2>
+                <h5>스마트폰 브라우저를 통해 사용</h5><br />
+                <div style="text-align:left">
+                    <p style="font-size:20px">-  데스크 탑 브라우저에서 보는 웹 페이지를 스마트폰 화면 크기로 축소시킨 것</p>
+                    <p style="font-size:20px">-  HTML, CSS, Javascript, JSP, PHP, ASP, ASP NET등 일반적이고 표준화된 웹 기술로 개발</p>
+                    <p style="font-size:20px">-  풀 브라우징 방식으로 페이지를 이동해 앱에 비해 접속속도가 느림</p>
+                    <p style="font-size:20px">-  모바일 기기의 특성상 이동 중에 서버 접속 장애가 발생할 수 있어 불안정</p>
+                    <p style="font-size:20px">-  애플 앱스토어, 안드로이드 마켓에서 등록, 판매 불가능</p>
+                    <p style="font-size:20px">-  스마트폰의 고유정보 및 하드웨어를 제어 불가능</p>
+                </div>
+
+            </section>
+
+            <section>
+                <h2>하이브리드 앱</h2>
+                <h5>네이티브앱과 모바일 웹의 장점을 결합한 형태</h5><br />
+                <div style="text-align:left">
+                    <p style="font-size:20px">-  웹앱을 네이티브 앱으로 포장한 것</p>
+                    <p style="font-size:20px">-  웹 기술로 개발되었지만 모바일에 최적화된 언어로 만드는 네이티브 앱처럼 보이게 하는 것</p>
+                    <p style="font-size:20px">-  네이티브앱의 형태이므로 앱스토어나 마켓에 등록 가능</p>
+                    <p style="font-size:20px">-  모바일의 고유정보를 이용하고 하드웨어 제어 가능</p>
+                    <p style="font-size:20px">-  외부 형태는 네이티브 앱이지만 실제 내부는 모바일 웹앱으로 실행</p>
+                    <p style="font-size:20px">-  별도의 하이브리드 앱 프레임워크 필요</p>
+                    <p style="font-size:20px">-  폰갭(PhoneGap), 앱스프레소(Appspresso), 티타니움(Titanium)</p>
+                </div>
+            </section>
+            <section>
+                <h2>앱 비교</h2>
+                <table style="font-size:30px;text-align:center">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>네이티브 앱</th>
+                            <th>모바일 웹 (웹앱)</th>
+                            <th>하이브리드 앱</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>단말기 설치</td>
+                            <td>가능</td>
+                            <td>브라우저 이용</td>
+                            <td>가능</td>
+                        </tr>
+                        <tr>
+                            <td>앱스토어 판매</td>
+                            <td>가능</td>
+                            <td>불가능</td>
+                            <td>가능</td>
+                        </tr>
+                        <tr>
+                            <td>업데이트</td>
+                            <td>불편</td>
+                            <td>쉬움</td>
+                            <td>불편</td>
+                        </tr>
+                        <tr>
+                            <td>단말기 기능 사용</td>
+                            <td>모두 가능</td>
+                            <td>사용 불가</td>
+                            <td>가능</td>
+                        </tr>
+                        <tr>
+                            <td>반응속도</td>
+                            <td>가장빠름</td>
+                            <td>빠름</td>
+                            <td>약간느림</td>
+                        </tr>
+                        <tr>
+                            <td>개발 환경</td>
+                            <td>각 스마트폰</td>
+                            <td>표준</td>
+                            <td>표준</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2>하이브리드 앱</h2>
+                <h6>
+                    적합한 분야<h6>
+                        <br />
                         <div style="text-align:left">
-                        <p style="font-size:20px">-  B2B 및 B2E 앱</p>
-                        <p style="font-size:20px">-  내부 회사 서비스 및 리소스</p>
-                        <p style="font-size:20px">-  여러 플랫폼에 네이티브 앱을 배포하고자 하는 기업</p>
+                            <p style="font-size:20px">-  B2B 및 B2E 앱</p>
+                            <p style="font-size:20px">-  내부 회사 서비스 및 리소스</p>
+                            <p style="font-size:20px">-  여러 플랫폼에 네이티브 앱을 배포하고자 하는 기업</p>
                         </div>
-                    </section>
-                         <section>
-                    <h2>하이브리드 앱</h2>
-                    <h6>장점<h6><br/>
+            </section>
+            <section>
+                <h2>하이브리드 앱</h2>
+                <h6>
+                    장점<h6>
+                        <br />
                         <div style="text-align:left">
-                        <p style="font-size:20px">-  웹 표준을 사용하여 제작(API를 통해 폰 기능에 접근하기 위한 약간의 특수한 코딩이 필요)</p>
-                        <p style="font-size:20px">-  기업은 기존 웹 개발자를 활용하여 하이브리드 앱 개발 가능</p>
-                        <p style="font-size:20px">-  신속한 수정 가능</p>
-                        <p style="font-size:20px">-  각 플랫폼에서 네이티브 앱으로 실행</p>
-                        <p style="font-size:20px">-  아이디어가 생기는 즉시 빠르게 개발</p>
-                        <p style="font-size:20px">-  저렴한 비용으로 도입</p>
+                            <p style="font-size:20px">-  웹 표준을 사용하여 제작(API를 통해 폰 기능에 접근하기 위한 약간의 특수한 코딩이 필요)</p>
+                            <p style="font-size:20px">-  기업은 기존 웹 개발자를 활용하여 하이브리드 앱 개발 가능</p>
+                            <p style="font-size:20px">-  신속한 수정 가능</p>
+                            <p style="font-size:20px">-  각 플랫폼에서 네이티브 앱으로 실행</p>
+                            <p style="font-size:20px">-  아이디어가 생기는 즉시 빠르게 개발</p>
+                            <p style="font-size:20px">-  저렴한 비용으로 도입</p>
                         </div>
-                    </section>
-                        
-                    <section>
-                    <h2>하이브리드 앱</h2>
-                    <h6>단점<h6><br/>
+            </section>
+
+            <section>
+                <h2>하이브리드 앱</h2>
+                <h6>
+                    단점<h6>
+                        <br />
                         <img width="300" height="200" data-src="img/rabbit.jpg">
-                    </section>
-                    <section>
-                        <h2>Why? Ionic</h2>
-                        <br/>
-                        <div style="text-align:left">
-                         <p style="font-size:20px">-  모바일 앱을 개발하기에 최적화된 UI가 기본적으로 제공</p>
-                         <p style="font-size:20px">-  HTML으로 UI를 만들고 JavaScript의 데이타 업데이트를 빠르게 적용</p>
-                         <p style="font-size:20px">-  MVC 개발을 할 수 있는 환경을 제공</p>
-                         <p style="font-size:20px">-  네이티브 자원을 사용할 수 있는 plugins 사용</p>
-                         <p style="font-size:20px">-  크로스 플랫폼 빌드를 제공</p>
-                         <p style="font-size:20px">-  Node.js 기반으로 개발</p>
-                         <p style="font-size:20px">-  활발한 개발자 포럼을 지원</p>
-                    </div>
-                    </section>
-                     <section>
-                        <h2>Ionic Start</h2>
-                        <h6>사전지식<h6><br/>
-                            <img width="160" height="160" data-src="img/angular.png">
-                            <img width="160" height="160" data-src="img/nodejs.jpg">
-                            <img width="160" height="160" data-src="img/cordova.jpg">
-                    </section>
-                    <section>
-                    <h2>AngularJS</h2>
-                    <h6>소개<h6><br/>
-                    <p style="font-size:20px">AngularJS는 구글(Google)에서 만든 Single Page App(SPA)를 만들 때 반복되는 코드와 복잡한 코드를 줄                               이고 테스트를 쉽게 하도록 하기위해 만든 JavaScript MVC Framework</p>
-                    <img width="383" height="108" data-src="img/AngularJS-large.png">
-                    </section>
-                     <section>
-                    <h2>AngularJS</h2>
-                    <h6>구조<h6>
-                    <img width="700" height="450" data-src="img/modules.jpg">
-                    </section>
-                     <section>
-                         <h2>AngularJS 세미나 자료</h2>
-                              <a href="https://www.youtube.com/watch?v=SlwvACsXIjE#action=share">동영상</a>
-                     </section>
-                    <section>
-                        <h2>jQuery 버전</h2>
-                   <iframe height='268' scrolling='no' src='http://www.codepen.io/OhSeKwang/embed/mVWQgz/?height=268&theme-id=0&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/OhSeKwang/pen/mVWQgz/'>mVWQgz</a> by OhSeKwang (<a href='http://codepen.io/OhSeKwang'>@OhSeKwang</a>)
-</iframe>
-                    </section>
-                       <section>
-                        <h2>Angular JS</h2>
-                  <iframe height='268' scrolling='no' src='http://www.codepen.io/OhSeKwang/embed/XXMyQp/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/OhSeKwang/pen/XXMyQp/'>XXMyQp</a> by OhSeKwang (<a href='http://codepen.io/OhSeKwang'>@OhSeKwang</a>)
-</iframe></section>
-               <section>
-					<h2>Angular JS</h2>
-                   <p>ng 선언 Html</p>
-                    <br/>
-					<pre><code class="hljs" data-trim contenteditable>
+            </section>
+            <section>
+                <h2>Why? Ionic</h2>
+                <br />
+                <div style="text-align:left">
+                    <p style="font-size:20px">-  모바일 앱을 개발하기에 최적화된 UI가 기본적으로 제공</p>
+                    <p style="font-size:20px">-  HTML으로 UI를 만들고 JavaScript의 데이타 업데이트를 빠르게 적용</p>
+                    <p style="font-size:20px">-  MVC 개발을 할 수 있는 환경을 제공</p>
+                    <p style="font-size:20px">-  네이티브 자원을 사용할 수 있는 plugins 사용</p>
+                    <p style="font-size:20px">-  크로스 플랫폼 빌드를 제공</p>
+                    <p style="font-size:20px">-  Node.js 기반으로 개발</p>
+                    <p style="font-size:20px">-  활발한 개발자 포럼을 지원</p>
+                </div>
+            </section>
+            <section>
+                <h2>Ionic Start</h2>
+                <h6>
+                    사전지식<h6>
+                        <br />
+                        <img width="160" height="160" data-src="img/angular.png">
+                        <img width="160" height="160" data-src="img/nodejs.jpg">
+                        <img width="160" height="160" data-src="img/cordova.jpg">
+            </section>
+            <section>
+                <h2>AngularJS</h2>
+                <h6>
+                    소개<h6>
+                        <br />
+                        <p style="font-size:20px">AngularJS는 구글(Google)에서 만든 Single Page App(SPA)를 만들 때 반복되는 코드와 복잡한 코드를 줄                               이고 테스트를 쉽게 하도록 하기위해 만든 JavaScript MVC Framework</p>
+                        <img width="383" height="108" data-src="img/AngularJS-large.png">
+            </section>
+            <section>
+                <h2>AngularJS</h2>
+                <h6>
+                    구조<h6>
+                        <img width="700" height="450" data-src="img/modules.jpg">
+            </section>
+            <section>
+                <h2>AngularJS 세미나 자료</h2>
+                <a href="https://www.youtube.com/watch?v=SlwvACsXIjE#action=share">동영상</a>
+            </section>
+            <section>
+                <h2>jQuery 버전</h2>
+                <iframe height='268' scrolling='no' src='http://www.codepen.io/OhSeKwang/embed/mVWQgz/?height=268&theme-id=0&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+                    See the Pen <a href='http://codepen.io/OhSeKwang/pen/mVWQgz/'>mVWQgz</a> by OhSeKwang (<a href='http://codepen.io/OhSeKwang'>@OhSeKwang</a>)
+                </iframe>
+            </section>
+            <section>
+                <h2>Angular JS</h2>
+                <iframe height='268' scrolling='no' src='http://www.codepen.io/OhSeKwang/embed/XXMyQp/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+                    See the Pen <a href='http://codepen.io/OhSeKwang/pen/XXMyQp/'>XXMyQp</a> by OhSeKwang (<a href='http://codepen.io/OhSeKwang'>@OhSeKwang</a>)
+                </iframe>
+            </section>
+            <section>
+                <h2>Angular JS</h2>
+                <p>ng 선언 Html</p>
+                <br />
+                <pre><code class="hljs" data-trim contenteditable>
 <div ng-app="myApp">
-    <div ng-controller="MainCtrl">
+                <div ng-controller="MainCtrl">
         <!-- controller logic -->
     </div>
 </div>				</code></pre>
-				</section>
-                         <section>
-					<h2>Angular JS</h2>
-                   <p>Angular module controller 선언</p>
-                    <br/>
-					<pre><code class="hljs" data-trim contenteditable>
+            </section>
+            <section>
+                <h2>Angular JS</h2>
+                <p>Angular module controller 선언</p>
+                <br />
+                <pre><code class="hljs" data-trim contenteditable>
 var myApp = angular.module('myApp', []);
 
 myApp.controller('MainCtrl', ['$scope', function ($scope) {
   // Controller magic
 }]);
 </code></pre>
-				</section>
-                           <section>
-                        <h2>Angular JS</h2>
-                               
-                  <iframe height='268' scrolling='no' src='http:www.codepen.io/OhSeKwang/embed/VepqpV/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/OhSeKwang/pen/VepqpV/'>XXMyQp</a> by OhSeKwang (<a href='http://codepen.io/OhSeKwang'>@OhSeKwang</a>)
-</iframe></section> 
-                        <section>
-                            <h2>Hybrid Ionic Start</h2>
-                        </section>
-           <section>
-                    <h2>Ionic 환경설정</h2>
-                    <p>NodeJS 설치</p>
-                    <a href="https://nodejs.org/en/"<p>https://nodejs.org/en/</p></a>
-                     <img width="600" height="400" data-src="img/NodejsSetup.png">
-                </section>
-                 <section>
-                    <h2>Ionic 환경설정</h2>
-                    <p>Cordova 설치</p>
-                    <img width="600" height="400" data-src="img/cordova.png">
-                </section>
-                <section>
-                    <h2>Ionic 환경설정</h2>
-                    <p>Ionic 설치</p>
-                    <img width="600" height="400" data-src="img/ionicsetup.png">
-                </section>
-                        
-                 <section>
-                    <h2>Ionic 환경설정</h2>
-                    <p>Platform 설치</p>
-                     	<pre><code class="hljs" data-trim contenteditable>
+            </section>
+            <section>
+                <h2>Angular JS</h2>
+                <iframe height='268' scrolling='no' src='http://www.codepen.io/OhSeKwang/embed/VepqpV/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+                    See the Pen <a href='http://codepen.io/OhSeKwang/pen/VepqpV/'>VepqpV</a> by OhSeKwang (<a href='http://codepen.io/OhSeKwang'>@OhSeKwang</a>)
+                </iframe>
+            </section>
+            <section>
+                <h2>Hybrid Ionic Start</h2>
+            </section>
+            <section>
+                <h2>Ionic 환경설정</h2>
+                <p>NodeJS 설치</p>
+                <a href="https://nodejs.org/en/"<p>https://nodejs.org/en/</p></a>
+                <img width="600" height="400" data-src="img/NodejsSetup.png">
+            </section>
+            <section>
+                <h2>Ionic 환경설정</h2>
+                <p>Cordova 설치</p>
+                <img width="600" height="400" data-src="img/cordova.png">
+            </section>
+            <section>
+                <h2>Ionic 환경설정</h2>
+                <p>Ionic 설치</p>
+                <img width="600" height="400" data-src="img/ionicsetup.png">
+            </section>
+
+            <section>
+                <h2>Ionic 환경설정</h2>
+                <p>Platform 설치</p>
+                <pre><code class="hljs" data-trim contenteditable>
 cd work //작업폴더 이동
 
 ionic platform add ios //아이폰 설정(맥환경 및 XCode 필요)
 
 ionic platform add android //안드로이드 설정 (안드로이드 SDK 다운 및 설정 필요)
-
 			</code></pre>
-                    
-                </section>
-           
-              <section>
-                    <h2>Ionic 템플릿</h2>
-                    <p>blank</p>
-                     	<pre><code class="hljs" data-trim contenteditable>
+
+            </section>
+
+            <section>
+                <h2>Ionic 템플릿</h2>
+                <p>blank</p>
+                <pre><code class="hljs" data-trim contenteditable>
 cd..
 
 ionic start blankApp blak //실행명령:폴더명:ionic템플릿설정
@@ -273,19 +292,19 @@ cd blankApp //폴더이동
 
 ionic Serve //내장Ionic 서버 실행               
 			</code></pre>
-                    
-                </section>                     
-                <section>
-            <h2>Ionic 템플릿</h2>
-            <p>blank</p>
-            <img width="400" height="500" data-src="img/ionicserve.png">
-            <img width="400" height="500" data-src="img/ionicblank.png">
+
             </section>
-                        
-                 <section>
-                    <h2>Ionic 템플릿</h2>
-                    <p>sidemenu</p>
-                     	<pre><code class="hljs" data-trim contenteditable>
+            <section>
+                <h2>Ionic 템플릿</h2>
+                <p>blank</p>
+                <img width="400" height="500" data-src="img/ionicserve.png">
+                <img width="400" height="500" data-src="img/ionicblank.png">
+            </section>
+
+            <section>
+                <h2>Ionic 템플릿</h2>
+                <p>sidemenu</p>
+                <pre><code class="hljs" data-trim contenteditable>
 cd..
 
 ionic start sidemenuApp sidemenu //실행명령:폴더명:ionic템플릿설정
@@ -294,101 +313,102 @@ cd sidemenuApp //폴더이동
 
 ionic Serve //내장Ionic 서버 실행               
 			</code></pre>
-                    
-                </section>                     
-                <section>
-            <h2>Ionic 템플릿</h2>
-            <p>sidemenu</p>
-            <img width="400" height="500" data-src="img/sidemenusetup.png">
-            <img width="400" height="500" data-src="img/sidemenusserve.png">
+
             </section>
-                        
-                <section>
-                    <h2>Ionic 템플릿</h2>
-                    <p>tabs</p>
-                     	<pre><code class="hljs" data-trim contenteditable>
+            <section>
+                <h2>Ionic 템플릿</h2>
+                <p>sidemenu</p>
+                <img width="400" height="500" data-src="img/sidemenusetup.png">
+                <img width="400" height="500" data-src="img/sidemenusserve.png">
+            </section>
+
+            <section>
+                <h2>Ionic 템플릿</h2>
+                <p>tabs</p>
+                <pre><code class="hljs" data-trim contenteditable>
 cd..
 
 ionic start tabsApp tabs //실행명령:폴더명:ionic템플릿설정
 
 cd tabs //폴더이동
 
-ionic Serve //내장Ionic 서버 실행               
+ionic Serve //내장Ionic 서버 실행  
+                                 
 			</code></pre>
-                    
-                </section>                     
-                <section>
-            <h2>Ionic 템플릿</h2>
-            <p>tabs</p>
-            <img width="400" height="500" data-src="img/tabssetup.png">
-            <img width="400" height="500" data-src="img/tabsserve.png">
-            </section>  
-                        
-            <section>
-            <h2>Example Ionic</h2>
+
             </section>
-                        
             <section>
-            <h2>Example Ionic</h2>
+                <h2>Ionic 템플릿</h2>
+                <p>tabs</p>
+                <img width="400" height="500" data-src="img/tabssetup.png">
+                <img width="400" height="500" data-src="img/tabsserve.png">
+            </section>
+
+            <section>
+                <h2>Example Ionic</h2>
+            </section>
+
+            <section>
+                <h2>Example Ionic</h2>
                 <p>js/app.js 코드 추가</p>
                 <img width="900" height="500" data-src="img/tabsadd.png">
             </section>
-        
-           <section>
-            <h2>Example Ionic</h2>
+
+            <section>
+                <h2>Example Ionic</h2>
                 <p>js/controllers.js 코드 추가</p>
                 <img width="900" height="500" data-src="img/mostisoftcontrol.png">
-            </section>  
-                        
+            </section>
+
             <section>
-            <h2>Example Ionic</h2>
+                <h2>Example Ionic</h2>
                 <p>www/templates html 추가</p>
                 <img width="900" height="500" data-src="img/templatesadd.png">
-            </section>  
-            
+            </section>
+
             <section>
-            <h2>Example Ionic</h2>
+                <h2>Example Ionic</h2>
                 <p>www/templates/tabs.html 추가</p>
-                <img width="900" height="500" data-src="img/templatesadd.png">
-            </section> 
+                <img width="900" height="500" data-src="img/tabshtmladd.png">
+            </section>
             <section>
-            <h2>Example Ionic</h2>
+                <h2>Example Ionic</h2>
                 <p>실행화면</p>
                 <img width="450" height="500" data-src="img/run1.png">
                 <img width="450" height="500" data-src="img/run2.png">
-            </section> 
-                        
+            </section>
+
             <section>
-            <h2>to be continued</h2>
-            </section> 
-                        
-            </div>
+                <h2>to be continued</h2>
+            </section>
+
         </div>
-		<script src="../reveal/lib/js/head.min.js"></script>
-		<script src="../reveal/js/reveal.js"></script>
+    </div>
+    <script src="../reveal/lib/js/head.min.js"></script>
+    <script src="../reveal/js/reveal.js"></script>
 
-		<script>
+    <script>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: '../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: '../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: '../reveal/plugin/zoom-js/zoom.js', async: true },
-					{ src: '../reveal/plugin/notes/notes.js', async: true }
-				]
-			});
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: '../reveal/lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: '../reveal/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: '../reveal/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: '../reveal/plugin/zoom-js/zoom.js', async: true },
+                { src: '../reveal/plugin/notes/notes.js', async: true }
+            ]
+        });
 
-		</script>
-        
-	</body>
+    </script>
+
+</body>
 </html>
