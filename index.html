@@ -1,44 +1,615 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Ohsekwang.GitHub.io by OhSeKwang</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <meta charset="utf-8">
+    <title>Hybrid App Ionic</title>
+    <link rel="stylesheet" href="../reveal/css/reveal.css">
+    <link rel="stylesheet" href="../reveal/css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 </head>
 
 <body>
-    <section class="page-header">
-        <h1 class="project-name">모든 것이 변했다.<br/>모든 것이 바뀐다.</h1>
-        <h2 class="project-tagline">"세상에서 가장 좋은건 사람을 믿어 주는 것이다."</h2>
-    </section>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Hello Xamarin</h1>
+                <br />
+                <br />
+                <p>
+                    <small>Created by <a href="http://ohsekwang.github.io/">OhSeKwang  </a><a href="http://mostisoft.com"> Mostisoft</a>. Alt + click anywhere to zoom back out.</small>
+                </p>
+            </section>
 
-    <section class="main-content">
-        <div>
-            <a href="./Contents/Xamarin/index.html"><h3>Xamarin</h3></a>
-            <p> Xamarin Cross-Platform Mobile Development </p>
+            <section>
+                <h2>Xamarin 소개</h2>
+                <img width="740" height="310" data-src="img/Xamarin_logo.png">
+                <p style="font-size:25px;text-align:right"><a href="https://mva.microsoft.com/ebooks#9780735697232">Free Book</a></p>
+            </section>
+
+            <section>
+                <p style="font-size:45px;text-align:center">C# 코드 베이스를 사용하여 네이티브 iOS, Android 및 Windows 앱 빌드</p>
+                <div>
+                    <div style="float:left;margin-top:20px;">
+                        <ul>
+                            <li style="font-size:19px;margin-bottom:35px;">C#을 사용하여 모바일로 이동</li>
+                            <li style="font-size:19px;margin-bottom:35px;">iOS, Android 및 Windows를 대상으로 지정</li>
+                            <li style="font-size:19px;margin-bottom:35px;">보기 좋은 네이티브 사용자 환경 디자인</li>
+                            <li style="font-size:19px;margin-bottom:35px;">전체 기본 성능 달성</li>
+                            <li style="font-size:19px;margin-bottom:35px;">핵심 플랫폼 API 사용</li>
+                            <li style="font-size:19px;margin-bottom:35px;">편리한 빌드 및 테스트 도구</li>
+                            <li style="font-size:19px;margin-bottom:35px;">Azure 서비스와 쉽게 연결</li>
+                        </ul>
+                    </div>
+                    <div style="float:right">
+                        <img width="550" height="400" data-src="img/IC810419.png">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <p style="font-size:45px;text-align:center">모든 플랫폼 대상 지정</p>
+                <div>
+                    <div style="float:left">
+                        <img width="450" height="300" data-src="img/IC810354.png">
+                    </div>
+                    <div style="float:right;margin-top:20px;">
+                        <ul>
+                            <li style="font-size:15px;margin-bottom:70px;">iOS, Android 및 Windows에 대한 단일 공유 코드 베이스</li>
+                            <li style="font-size:15px;margin-bottom:70px;">C# 코드를 사용하여 iOS, Android, Windows, Mac
+                                <br/> 등 모든 플랫폼 대한 모바일 앱을 빠르게 빌드</li>
+
+                            <li style="font-size:15px;margin-bottom:70px;">각 플랫폼에 대한 기본 사용자 지정 사용자 인터페이스를 빌드하거나
+                                <br/> Xamarin.Forms를 사용하여 플랫폼 전반에 걸쳐
+                                <br/> 단일의 공유 사용자 인터페이스를 작성</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <p style="font-size:45px;text-align:center">Visual Studio 사용</p>
+                <br/>
+                <img width="600" height="400" data-src="img/IC810357.png">
+            </section>
+
+            <section>
+                <p style="font-size:45px;text-align:center">기본 성능 고유하게 컴파일된 앱</p>
+                <div>
+                    <div style="float:left;margin-top:25px;">
+                        <ul>
+                            <li style="font-size:18px;margin-bottom:40px;">성능이 손상되지 않음</li>
+                            <li style="font-size:18px;margin-bottom:40px;">네이티브 코드에 컴파일되며
+                                <br/>각 장치에서 최적화된 성능을 제공하기 위해
+                                <br/> 플랫폼별 하드웨어 가속화를 활용</li>
+                        </ul>
+                    </div>
+                    <div style="float:right">
+                        <img width="550" height="300" data-src="img/IC810361.png">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <p style="font-size:45px;text-align:center">모바일 장치 API의 100%에 액세스</p>
+                <img width="600" height="300" data-src="img/IC810355.png">
+                <ul>
+                    <li style="font-size:20px;margin-bottom:20px;">NET API 이외에 각 플랫폼에 대한 100% 네이티브 코어 API에 직접 액세스하여 C#으로 플랫폼별 환경을 구축</li>
+                    <li style="font-size:20px">플랫폼 API의 100%를 사용하므로 제한이 없습</li>
+                </ul>
+            </section>
+
+            <section>
+                <p style="font-size:45px;text-align:center">Azure를 사용하여 연결</p>
+                <img width="630" height="330" data-src="img/IC810362.png">
+                <ul>
+                    <li style="font-size:20px;margin-bottom:20px;">Azure 모바일 서비스와 빠르게 통합하여 구성</li>
+                    <li style="font-size:20px">앱에서는 클라우드의 데이터 저장소, 고객 인증, 푸시 알림, 오프라인 동기화 등과 같은 다양한 서비스를 활용</li>
+                </ul>
+            </section>
+
+            <!--
+            <section>
+                <h2>Xamarin 소개</h2>
+                <br/>
+                <div style="text-align:left">
+                    <p style="font-size:25px">1. Complete Binding for the underlying SDKs</p>
+                    <p style="font-size:25px">2. Objective-C, Java, C, and C++ Interop</p>
+                    <p style="font-size:25px">3. Modern Language Constructs</p>
+                    <p style="font-size:25px">4. Amazing Base Class Library (BCL)</p>
+                    <p style="font-size:25px">5. Modern Integrated Development Environment (IDE)</p>
+                    <p style="font-size:25px">6. Mobile Cross Platform Support </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>How Does Xamarin Work</h2>
+                <img width="638" height="359" data-src="img/xamarin-vnow-8-638.jpg">
+            </section>
+         -->
+            <section>
+                <h3>자마린을 사용해야 하는 5가지 이유</h3>
+                <br/>
+                <div style="text-align:left">
+                    <p style="font-size:25px">1. Less to learn</p>
+                    <p style="font-size:25px">2. No limits</p>
+                    <p style="font-size:25px">3. Faster time-to-market</p>
+                    <p style="font-size:25px">4. Fewer bugs</p>
+                    <p style="font-size:25px">5. Readiness for the future</p>
+                    <p style="font-size:25px;text-align:right"><a href="http://blog.pluralsight.com/5-reasons-xamarin">원본문서</a></p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Xamarin Pricing</h2>
+                <img width="700" height="500" data-src="img/price.png">
+            </section>
+
+
+            <section>
+                <h3>개발환경 구성</h3>
+            </section>
+            <section>
+                <img width="600" height="400" data-src="img/main.png">
+                <p style="font-size:25px;text-align:center"><a href="http://xamarin.com/download">http://xamarin.com/download</a></p>
+            </section>
+
+            <section>
+                <img width="485" height="300" data-src="img/framework.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/xamarin Installer1.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/xamarin Installer2.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/xamarin Installer3.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/xamarin Installer4.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/xamarin Installer5.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/xamarin Installer6.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/xamarin Installer7.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/xamarin Installer8.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/xamarin Installer9.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/xamarin Installer10.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/xamarin Installer11.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/xamarinend.png">
+            </section>
+
+            <section>
+                <img width="800" height="600" data-src="img/studio.png">
+            </section>
+
+            <section>
+                <h3>Emulator 환경구성</h3>
+                <br/>
+                <div style="text-align:left">
+                    <p style="font-size:30px">Android</p>
+                    <p style="font-size:25px"> - Android Emulator에 느린 속도를 회피하기 위해서 지니모션 사용</p>
+                    <p style="font-size:30px">IOS</p>
+                    <p style="font-size:25px"> - 추후 업데이트 예정...</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>지니모션 환경구성</h3>
+            </section>
+
+            <section>
+                <img width="300" height="300" data-src="img/지니0.png">
+                <div style="text-align:left">
+                    <p style="font-size:25px;text-align:center"><a href="https://www.genymotion.com/download/">https://www.genymotion.com/download/</a></p>
+                    <p style="font-size:25px">1. 버추어박스 합본 버전</p>
+                    <p style="font-size:25px">2. 지니모션 단일 버전</p>
+                    <p style="font-size:25px">※ 지니모션은 버추어박스가 필수로 필요함</p>
+                </div>
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니1.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니2.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니3.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니4.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니5.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니6.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니7.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니8.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니9.png">
+            </section>
+
+            <section>
+                <img width="370" height="600" data-src="img/지니실행.png">
+            </section>
+
+            <section>
+                <div style="text-align:left">
+                    <p style="font-size:25px"><a href="https://www.dropbox.com/s/7itudhfkxfcpj10/Genymotion-ARM-Translation_v1.1.zip"># ARM Translation(APK 설치 지원)</a></p>
+                    <p style="font-size:25px"><a href="http://goo.im/gapps/gapps-jb-20130813-signed.zip"># Goodle Apps for Android 4.3</a></p>
+                    <p style="font-size:25px"><a href="http://goo.im/gapps/gapps-jb-20130812-signed.zip"># Goodle Apps for Android 4.2</a></p>
+                    <p style="font-size:25px"><a href="http://goo.im/gapps/gapps-jb-20121011-signed.zip"># Goodle Apps for Android 4.1</a></p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Xamarin.Forms</h2>
+            </section>
+            <section>
+                <div style="text-align:left">
+                    <p style="font-size:25px">1. Hello, Xamarin.Forms</p>
+                    <p style="font-size:25px">2. User Interface</p>
+                    <p style="font-size:25px">3. Platform Features</p>
+                    <p style="font-size:25px">4. Custom Renderers</p>
+                    <p style="font-size:25px">5. DependencyService</p>
+                    <p style="font-size:25px">6. MessagingCenter</p>
+                    <p style="font-size:25px">7. Web Services</p>
+                    <p style="font-size:25px">8. Advanced Topics</p>
+                    <p style="font-size:25px">9. Deployment, Testing, and Metrics</p>
+                    <p style="font-size:25px">10. Troubleshooting</p>
+                    <p style="font-size:25px"><a href="https://developer.xamarin.com/guides/xamarin-forms/creating-mobile-apps-xamarin-forms/">11. Creating Mobile Apps with Xamarin.Forms Book Preview 2</a></p>
+
+                </div>
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="800" height="600" data-src="img/Quickstart00.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="800" height="600" data-src="img/Quickstart01.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="800" height="600" data-src="img/Quickstart02.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="800" height="600" data-src="img/Quickstart03.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart04.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart05.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart06.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart07.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart08.png">
+            </section>
+<<<<<<< HEAD
+=======
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart09.png">
+            </section>
+
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart10.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart11.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart12.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart13.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart14.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart15.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart16.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart17.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="500" height="600" data-src="img/Quickstart18.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="500" height="600" data-src="img/Quickstart19.png">
+            </section>
+
+            <section>
+                <p style="font-size:50px">Phoneword App Run</p>
+            </section>
+
+            <!--2. User Interface -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts</p>
+                <img width="1500" height="500" data-src="img/Layouts.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ StackLayout</p>
+                <p style="font-size:20px">가로 또는 세로 방향으로 지정할 수 있는 단일 선에 따라 자식 요소를 정렬합니다.</p>
+                <img width="800" height="400" data-src="img/Layouts1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ StackLayout</p>
+                <img width="800" height="400" data-src="img/Layouts2.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ StackLayout</p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/Layouts4.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/Layouts3.png">
+                    </div>
+                </div>
+            </section>
+>>>>>>> origin/master
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart09.png">
+            </section>
+
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart10.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart11.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart12.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart13.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart14.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart15.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart16.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart17.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="500" height="600" data-src="img/Quickstart18.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="500" height="600" data-src="img/Quickstart19.png">
+            </section>
+
+            <section>
+                <p style="font-size:50px">Phoneword App Run</p>
+            </section>
+
+            <!--2. User Interface -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts</p>
+                <img width="1500" height="500" data-src="img/Layouts.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ StackLayout</p>
+                <p style="font-size:20px">가로 또는 세로 방향으로 지정할 수 있는 단일 선에 따라 자식 요소를 정렬합니다.</p>
+                <img width="800" height="400" data-src="img/Layouts1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ StackLayout</p>
+                <img width="800" height="400" data-src="img/Layouts2.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ StackLayout</p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/Layouts4.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/Layouts3.png">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ AbsoluteLayout</p>
+                <p style="font-size:20px">자신의 크기와 절대 값을 기준으로 자식 요소를 정렬합니다.</p>
+                <img width="800" height="400" data-src="img/Layouts5.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ AbsoluteLayout</p>
+                <img width="820" height="530" data-src="img/Layouts6.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ AbsoluteLayout</p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/Layouts7.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/Layouts8.png">
+                    </div>
+                </div>
+            </section>
+            
         </div>
-        <div>
-            <a href="./Contents/Ionic/index.html"><h3>Ionic</h3></a>
-            <p>Advanced HTML5 Hybrid Mobile App Framework</p>
-        </div>
-        <div>
-            <a href="#"><h3> Angular js & ASP.NET MVC </h3></a>
-            <p>비공개.</p>
-        </div>
-        <div>
-            <a href="#"><h3> FireBase </h3></a>
-            <p>비공개.</p>
-        </div>
-        <div>
-            <a href="#"><h3> Parse </h3></a>
-            <p>비공개.</p>
-        </div>
-    </section>
+    </div>
+    <script src="../reveal/lib/js/head.min.js"></script>
+    <script src="../reveal/js/reveal.js"></script>
+
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+            // Optional reveal.js plugins
+            dependencies: [{
+                src: '../reveal/lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: '../reveal/plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: '../reveal/plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: '../reveal/plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: '../reveal/plugin/zoom-js/zoom.js',
+                async: true
+            }, {
+                src: '../reveal/plugin/notes/notes.js',
+                async: true
+            }]
+        });
+    </script>
+
 </body>
 
 </html>
