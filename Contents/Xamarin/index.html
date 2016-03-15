@@ -119,25 +119,6 @@
                 </ul>
             </section>
 
-            <!--
-            <section>
-                <h2>Xamarin 소개</h2>
-                <br/>
-                <div style="text-align:left">
-                    <p style="font-size:25px">1. Complete Binding for the underlying SDKs</p>
-                    <p style="font-size:25px">2. Objective-C, Java, C, and C++ Interop</p>
-                    <p style="font-size:25px">3. Modern Language Constructs</p>
-                    <p style="font-size:25px">4. Amazing Base Class Library (BCL)</p>
-                    <p style="font-size:25px">5. Modern Integrated Development Environment (IDE)</p>
-                    <p style="font-size:25px">6. Mobile Cross Platform Support </p>
-                </div>
-            </section>
-
-            <section>
-                <h2>How Does Xamarin Work</h2>
-                <img width="638" height="359" data-src="img/xamarin-vnow-8-638.jpg">
-            </section>
-         -->
             <section>
                 <h3>자마린을 사용해야 하는 5가지 이유</h3>
                 <br/>
@@ -300,6 +281,7 @@
             </section>
             <section>
                 <div style="text-align:left">
+                    <p style="font-size:25px">0. XAML 시작하기</p>
                     <p style="font-size:25px">1. Hello, Xamarin.Forms</p>
                     <p style="font-size:25px">2. User Interface</p>
                     <p style="font-size:25px">3. Platform Features</p>
@@ -311,9 +293,123 @@
                     <p style="font-size:25px">9. Deployment, Testing, and Metrics</p>
                     <p style="font-size:25px">10. Troubleshooting</p>
                     <p style="font-size:25px"><a href="https://developer.xamarin.com/guides/xamarin-forms/creating-mobile-apps-xamarin-forms/">11. Creating Mobile Apps with Xamarin.Forms Book Preview 2</a></p>
+                </div>
+            </section>
+
+            <!--XAML Basics -->
+            <section>
+                <p style="font-size:30px">XAML 기본 내용</p>
+                <div style="text-align:left">
+                    <p style="font-size:25px">1. XAML 시작하기</p>
+                    <p style="font-size:25px">2. 필수 XAML 구문</p>
+                    <p style="font-size:25px">3. XAML 태그 확장</p>
+                    <p style="font-size:25px">4. 데이터 바인딩 기본 사항</p>
+                    <p style="font-size:25px">5. MVVM에 바인딩</p>
+                </div>
+            </section>
+
+            <!-- 1. XAML 시작하기<-->
+            <section>
+                <p style="font-size:30px">1. XAML 시작하기</p>
+                <p style="font-size:20px">요소와 속성을 가진 페이지를 정의</p>
+                <br/>
+                <div style="text-align:left">
+                    <p style="font-size:30px">Xamarin.Forms 애플리케이션에서는 대부분 XAML 페이지의 내용을 시각적으로 정의하는 데 사용됩니다. XAML 파일은 항상 마크 업 코드 지원을 제공하는 C # 코드 파일과 연관됩니다. 이 두 파일은 아이뷰 및 재산 초기화를 포함하는 새로운 클래스 정의를 포함합니다.. XAML 파일 내에서 클래스와 속성은 XML 요소와 속성을 참조하고, 마크 업 및 코드 사이의 링크가 설정됩니다.</p>
+                </div>
+            </section>
+
+            <!-- 1. XAML 시작하기<-->
+            <section>
+                <p style="font-size:30px">1. XAML 시작하기</p>
+                <p style="font-size:20px">솔루션 만들기</p>
+                <p style="font-size:15px">
+                    자마린 스튜디오, 선택 메뉴에서 파일> 새로 만들기> 솔루션 > Cross-Platform > APP > Xarmin.Forms.App 선택
+                </p>
+                <img width="900" height="580" data-src="img/XamrinBasic0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">1. XAML 시작하기</p>
+                <p style="font-size:20px">솔루션 만들기</p>
+                <p style="font-size:15px">
+                    자마린 스튜디오, 선택 메뉴에서 파일> 새로 만들기> 솔루션 > Cross-Platform > APP > Xarmin.Forms.App 선택
+                </p>
+                <img width="900" height="580" data-src="img/XamrinBasic0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">1. XAML 시작하기</p>
+                <p style="font-size:20px">솔루션 만들기</p>
+                <p style="font-size:15px">
+                    Next 선택
+                </p>
+                <img width="900" height="580" data-src="img/XamrinBasic1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">1. XAML 시작하기</p>
+                <p style="font-size:20px">페이지 만들기</p>
+                <p style="font-size:15px">
+                    XAML 샘플 프로젝트를 마우스 오른쪽 단추로 클릭> 추가> 새파일> Forms ContentPage Xaml 선택
+                </p>
+                <img width="900" height="580" data-src="img/XamrinBasic3.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">1. XAML 시작하기</p>
+                <p style="font-size:20px">XAML 클래스</p>
+                <p style="font-size:15px">두네임스페이스(xmlns)는 별도의 기능은 없고 버전을 표시하는데 사용합니다.</p>
+                <p style="font-size:15px">X 접두사가 선언 직후, 해당 접두어는 클래스라는 속성에 사용됩니다</p>
+                <p style="font-size:15px">X:XamlSamples 네임스페이스의 HelloXamlPage 클래스를 의미 합니다. </p>
+                <img width="900" height="150" data-src="img/XamrinBasic4.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">1. XAML 시작하기</p>
+                <p style="font-size:20px">App 실행페이지 선택 </p>
+                <p style="font-size:15px">HelloXamlPage의 인스턴스로 MainPage을 설정을하면 App의 시작페이지를 선택할수 있습니다.</p>
+                <img width="900" height="400" data-src="img/XamrinBasic6.png">
+            </section>
+
+            <!-- 2. 필수 XAML 구문-->
+            <section>
+                <p style="font-size:30px">2. 필수 XAML 구문</p>
+                <p style="font-size:20px">Property Elements</p>
+                <p style="font-size:20px">XML 속성으로 XAML에서 클래스의 속성은 일반적으로 설정됩니다.</p>
+                <img width="900" height="300" data-src="img/XamrinBasic7.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">2. 필수 XAML 구문</p>
+                <p style="font-size:20px">Property Elements</p>
+                <p style="font-size:20px"> 새로운 태그의 콘텐츠와 속성 값을 설정합니다.</p>
+                <img width="900" height="300" data-src="img/XamrinBasic8.png">
+            </section>
+
+            <section>
+
+                <p style="font-size:30px">2. 필수 XAML 구문</p>
+                <p style="font-size:20px">Property Elements</p>
+                <div style="text-align:left">
+                    <p style="font-size:20px">텍스트 색상 속성을 지정하려면 다음 두 가지 방법으로 기능적으로 동일하지만 효과적으로 두 배의 속성을 설정 될 수 있기 때문에 동일한 속성에 대해 두 가지 방법을 사용할 수 없습니다.</p>
+                    <p style="font-size:20px">라벨은 오브젝트 요소입니다. 라벨은 XML요소로 표현 Xamarin.Forms 객체입니다.</p>
+                    <p style="font-size:20px">텍스트, 수직 옵션, 글꼴 속성 및 폰트 크기 속성의 속성입니다. XML 속성으로 표현 Xamarin.Forms의 속성입니다.</p>
+                    <p style="font-size:20px">마지막 구문의 텍스트 색상 속성 요소가되고있다. 그것은 Xamarin.Forms 특성이지만 XML 엘리먼트로 표현 됩니다. </p>
+                    <p style="font-size:20px">property 요소의 정의는 처음에는 XML 문법을 위반하는 것으로 보일 수 있지만, XML에서 특별한 의미가 없습니다. Label.Text 색상은 단순히 정상적인 자식 요소입니다.</p>
+
+
 
                 </div>
             </section>
+
+
+
+
+
+
+
+
+
 
             <section>
                 <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
@@ -1013,18 +1109,18 @@
                 <img width="1500" height="500" data-src="img/TableView0.png">
             </section>
 
-            
+
             <!--8. User Interface ▶ ListView ▶ TableView ▶ Basic -->
             <section>
                 <p style="font-size:30px">User Interface ▶ ListView ▶ TableView ▶ Basic</p>
                 <img width="1500" height="500" data-src="img/TableView4.png">
             </section>
-            
+
             <section>
                 <p style="font-size:30px">User Interface ▶ ListView ▶ TableView ▶ Basic</p>
                 <img width="400" height="600" data-src="img/TableView5.png">
             </section>
-            
+
             <!--8. User Interface ▶ ListView ▶ TableView ▶ Built-In Cells -->
             <section>
                 <p style="font-size:30px">User Interface ▶ ListView ▶ TableView ▶ Built-In Cells</p>
@@ -1042,8 +1138,21 @@
                     </div>
                 </div>
             </section>
-            
-            
+
+            <!--TableView Demo App-->
+            <section>
+                <p style="font-size:50px">TableView Demo App</p>
+            </section>
+
+            <!--9. User Interface ▶ ListView ▶ WebView-->
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView </p>
+                <p style="font-size:20px;margin-bottom:35px;">웹 및 HTML 콘텐츠를 표시하는 View 입니다.</p>
+                <img width="1500" height="500" data-src="img/WebView0.png">
+            </section>
+
+
+
 
 
 
