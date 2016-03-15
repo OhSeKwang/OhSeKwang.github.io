@@ -304,7 +304,6 @@
                     <p style="font-size:25px">2. 필수 XAML 구문</p>
                     <p style="font-size:25px">3. XAML 태그 확장</p>
                     <p style="font-size:25px">4. 데이터 바인딩 기본 사항</p>
-                    <p style="font-size:25px">5. MVVM에 바인딩</p>
                 </div>
             </section>
 
@@ -387,7 +386,6 @@
             </section>
 
             <section>
-
                 <p style="font-size:30px">2. 필수 XAML 구문</p>
                 <p style="font-size:20px">Property Elements</p>
                 <div style="text-align:left">
@@ -396,20 +394,64 @@
                     <p style="font-size:20px">텍스트, 수직 옵션, 글꼴 속성 및 폰트 크기 속성의 속성입니다. XML 속성으로 표현 Xamarin.Forms의 속성입니다.</p>
                     <p style="font-size:20px">마지막 구문의 텍스트 색상 속성 요소가되고있다. 그것은 Xamarin.Forms 특성이지만 XML 엘리먼트로 표현 됩니다. </p>
                     <p style="font-size:20px">property 요소의 정의는 처음에는 XML 문법을 위반하는 것으로 보일 수 있지만, XML에서 특별한 의미가 없습니다. Label.Text 색상은 단순히 정상적인 자식 요소입니다.</p>
-
-
-
                 </div>
             </section>
 
+            <section>
+                <p style="font-size:30px">2. 필수 XAML 구문</p>
+                <p style="font-size:20px">Grid</p>
+                <div style="text-align:left">
+                    <p style="font-size:20px">그리드는 두 가지 속성의 RowDefinitions 및 ColumnDefinitions 있습니다.</p>
+                    <p style="font-size:20px">RowDefinitions : 행을 지정할수 있는 속성</p>
+                    <p style="font-size:20px">ColumnDefinitions : 열을 지정할수 있는 속성</p>
+                </div>
+                <img width="780" height="400" data-src="img/XamrinBasic9.png">
+            </section>
 
+            <section>
+                <p style="font-size:30px">2. 필수 XAML 구문</p>
+                <p style="font-size:20px">OnPlatform</p>
+                <div style="text-align:left">
+                    <p style="font-size:20px">아이폰에 상태 표시 줄을 중복 방지하기 위해 사용하고 특정 Platform 속성을 정의 합니다.</p>
+                </div>
+                <img width="780" height="400" data-src="img/XamrinBasic10.png">
+            </section>
 
+            <section>
+                <p style="font-size:30px">2. 필수 XAML 구문</p>
+                <p style="font-size:20px">Attached Properties(첨부속성)</p>
+                <div style="text-align:left">
+                    <p style="font-size:20px">그리드는 행과 열을 정의하는 RowDefinitions, ColumnDefinitions 컬렉션에 대한 속성 요소를 필요로합니다. 또한 그리드의 각각의 자식이 있는 행 및 열을 나타내는 방법이 있어야 합니다.</p>
+                    <p style="font-size:20px">그리드의 자식의 대한 태그 내에서 다음과 같은 속성을 사용하여 행과 열을 지정합니다.</p>
+                    <p style="font-size:20px">Grid.RowSpan, Grid.ColumnSpan이 두 속성은 하나의 기본 값을 가져야 합니다.</p>
+                </div>
+                <img width="780" height="400" data-src="img/XamrinBasic11.png">
+            </section>
 
+            <section>
+                <p style="font-size:30px">3. XAML 태그 확장</p>
+                <p style="font-size:20px">Shared Resources(공유 자원)</p>
+                <div style="text-align:left">
+                    <p style="font-size:20px">XAML에서는 ResourceDictionary에 속성값을 저장해서 사용합니다.</p>
+                </div>
+                <img width="780" height="300" data-src="img/XamrinBasic12.png">
+                <img width="780" height="300" data-src="img/XamrinBasic13.png">
+            </section>
 
+            <section>
+                <p style="font-size:30px">4. 데이터 바인딩 기본 사항</p>
+                <p style="font-size:20px">View-to-View Bindings</p>
+                <div style="text-align:left">
+                    <p style="font-size:20px">데이터 바인딩은 같은 페이지에 두 개의 뷰의 속성을 연결 정의 할 수 있습니다. 참조 태그 확장 :이 경우 X를 사용하여 대상 개체의 BindingContext를 설정합니다.</p>
+                </div>
+                <img width="780" height="500" data-src="img/XamrinBasic14.png">
+            </section>
 
-
-
-
+            <section>
+                <p style="font-size:30px">4. 데이터 바인딩 기본 사항</p>
+                <p style="font-size:20px">Backwards Bindings</p>
+                <p style="font-size:20px"><a href="https://msdn.microsoft.com/ko-kr/library/ms752347(v=vs.110).aspx">Backwards Bindings</a></p>
+            </section>
 
             <section>
                 <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
@@ -1150,6 +1192,70 @@
                 <p style="font-size:20px;margin-bottom:35px;">웹 및 HTML 콘텐츠를 표시하는 View 입니다.</p>
                 <img width="1500" height="500" data-src="img/WebView0.png">
             </section>
+
+            <!--9. User Interface ▶ ListView ▶ WebView ▶ Basic -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Basic </p>
+                <img width="1500" height="500" data-src="img/WebView1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Basic </p>
+                <img width="500" height="600" data-src="img/WebView2.png">
+            </section>
+
+            <!--9. User Interface ▶ ListView ▶ WebView ▶ Navigation -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Navigation </p>
+                <img width="1500" height="500" data-src="img/WebView3.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Navigation </p>
+                <img width="1500" height="500" data-src="img/WebView4.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Navigation </p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/WebView5.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/WebView6.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--9. User Interface ▶ ListView ▶ WebView ▶ Loding -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Loding </p>
+                <img width="1500" height="500" data-src="img/WebView7.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Loding </p>
+                <img width="1500" height="500" data-src="img/WebView8.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Loding </p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/WebView9.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/WebView10.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--WebView Demo App-->
+            <section>
+                <p style="font-size:50px">WebView Demo App</p>
+            </section>
+
+            <!--10. User Interface ▶ Gestures -->
 
 
 
