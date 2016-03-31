@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>Hybrid App Ionic</title>
@@ -18,217 +19,1384 @@
         document.getElementsByTagName('head')[0].appendChild(link);
     </script>
 </head>
+
 <body>
     <div class="reveal">
         <div class="slides">
             <section>
                 <h1>Hello Xamarin</h1>
-                <br /><br />
+                <br />
+                <br />
                 <p>
                     <small>Created by <a href="http://ohsekwang.github.io/">OhSeKwang  </a><a href="http://mostisoft.com"> Mostisoft</a>. Alt + click anywhere to zoom back out.</small>
                 </p>
             </section>
-            
+
             <section>
+                <h2>Xamarin 소개</h2>
                 <img width="740" height="310" data-src="img/Xamarin_logo.png">
                 <p style="font-size:25px;text-align:right"><a href="https://mva.microsoft.com/ebooks#9780735697232">Free Book</a></p>
             </section>
-            
+
             <section>
-                <h2>Xamarin 소개</h2>
-                <br/>
-                <div style="text-align:left">
-                    <p style="font-size:25px">1.   Complete Binding for the underlying SDKs</p>
-                    <p style="font-size:25px">2.   Objective-C, Java, C, and C++ Interop</p>
-                    <p style="font-size:25px">3.   Modern Language Constructs</p>
-                    <p style="font-size:25px">4.   Amazing Base Class Library (BCL)</p>
-                    <p style="font-size:25px">5.   Modern Integrated Development Environment (IDE)</p>
-                    <p style="font-size:25px">6.   Mobile Cross Platform Support </p>
+                <p style="font-size:45px;text-align:center">C# 코드 베이스를 사용하여 네이티브 iOS, Android 및 Windows 앱 빌드</p>
+                <div>
+                    <div style="float:left;margin-top:20px;">
+                        <ul>
+                            <li style="font-size:19px;margin-bottom:35px;">C#을 사용하여 모바일로 이동</li>
+                            <li style="font-size:19px;margin-bottom:35px;">iOS, Android 및 Windows를 대상으로 지정</li>
+                            <li style="font-size:19px;margin-bottom:35px;">보기 좋은 네이티브 사용자 환경 디자인</li>
+                            <li style="font-size:19px;margin-bottom:35px;">전체 기본 성능 달성</li>
+                            <li style="font-size:19px;margin-bottom:35px;">핵심 플랫폼 API 사용</li>
+                            <li style="font-size:19px;margin-bottom:35px;">편리한 빌드 및 테스트 도구</li>
+                            <li style="font-size:19px;margin-bottom:35px;">Azure 서비스와 쉽게 연결</li>
+                        </ul>
+                    </div>
+                    <div style="float:right">
+                        <img width="550" height="400" data-src="img/IC810419.png">
+                    </div>
                 </div>
             </section>
-            
+
             <section>
-                <h2>How Does Xamarin Work</h2>
-                <img width="638" height="359" data-src="img/xamarin-vnow-8-638.jpg">
+                <p style="font-size:45px;text-align:center">모든 플랫폼 대상 지정</p>
+                <div>
+                    <div style="float:left">
+                        <img width="450" height="300" data-src="img/IC810354.png">
+                    </div>
+                    <div style="float:right;margin-top:20px;">
+                        <ul>
+                            <li style="font-size:15px;margin-bottom:70px;">iOS, Android 및 Windows에 대한 단일 공유 코드 베이스</li>
+                            <li style="font-size:15px;margin-bottom:70px;">C# 코드를 사용하여 iOS, Android, Windows, Mac
+                                <br/> 등 모든 플랫폼 대한 모바일 앱을 빠르게 빌드</li>
+
+                            <li style="font-size:15px;margin-bottom:70px;">각 플랫폼에 대한 기본 사용자 지정 사용자 인터페이스를 빌드하거나
+                                <br/> Xamarin.Forms를 사용하여 플랫폼 전반에 걸쳐
+                                <br/> 단일의 공유 사용자 인터페이스를 작성</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
-            
+
             <section>
-                <h2>Xamarin Pricing</h2>
-                <img width="700" height="500" data-src="img/price.png">
+                <p style="font-size:45px;text-align:center">Visual Studio 사용</p>
+                <br/>
+                <img width="600" height="400" data-src="img/IC810357.png">
             </section>
-            
+
+            <section>
+                <p style="font-size:45px;text-align:center">기본 성능 고유하게 컴파일된 앱</p>
+                <div>
+                    <div style="float:left;margin-top:25px;">
+                        <ul>
+                            <li style="font-size:18px;margin-bottom:40px;">성능이 손상되지 않음</li>
+                            <li style="font-size:18px;margin-bottom:40px;">네이티브 코드에 컴파일되며
+                                <br/>각 장치에서 최적화된 성능을 제공하기 위해
+                                <br/> 플랫폼별 하드웨어 가속화를 활용</li>
+                        </ul>
+                    </div>
+                    <div style="float:right">
+                        <img width="550" height="300" data-src="img/IC810361.png">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <p style="font-size:45px;text-align:center">모바일 장치 API의 100%에 액세스</p>
+                <img width="600" height="300" data-src="img/IC810355.png">
+                <ul>
+                    <li style="font-size:20px;margin-bottom:20px;">NET API 이외에 각 플랫폼에 대한 100% 네이티브 코어 API에 직접 액세스하여 C#으로 플랫폼별 환경을 구축</li>
+                    <li style="font-size:20px">플랫폼 API의 100%를 사용하므로 제한이 없습</li>
+                </ul>
+            </section>
+
+            <section>
+                <p style="font-size:45px;text-align:center">Azure를 사용하여 연결</p>
+                <img width="630" height="330" data-src="img/IC810362.png">
+                <ul>
+                    <li style="font-size:20px;margin-bottom:20px;">Azure 모바일 서비스와 빠르게 통합하여 구성</li>
+                    <li style="font-size:20px">앱에서는 클라우드의 데이터 저장소, 고객 인증, 푸시 알림, 오프라인 동기화 등과 같은 다양한 서비스를 활용</li>
+                </ul>
+            </section>
+
             <section>
                 <h3>자마린을 사용해야 하는 5가지 이유</h3>
                 <br/>
                 <div style="text-align:left">
-                    <p style="font-size:25px">1.   Less to learn</p>
-                    <p style="font-size:25px">2.   No limits</p>
-                    <p style="font-size:25px">3.   Faster time-to-market</p>
-                    <p style="font-size:25px">4.   Fewer bugs</p>
-                    <p style="font-size:25px">5.   Readiness for the future</p>
+                    <p style="font-size:25px">1. Less to learn</p>
+                    <p style="font-size:25px">2. No limits</p>
+                    <p style="font-size:25px">3. Faster time-to-market</p>
+                    <p style="font-size:25px">4. Fewer bugs</p>
+                    <p style="font-size:25px">5. Readiness for the future</p>
                     <p style="font-size:25px;text-align:right"><a href="http://blog.pluralsight.com/5-reasons-xamarin">원본문서</a></p>
                 </div>
             </section>
+
+            <section>
+                <h2>Xamarin Pricing</h2>
+                <img width="700" height="500" data-src="img/price.png">
+            </section>
+
+
             <section>
                 <h3>개발환경 구성</h3>
+            </section>
+            <section>
                 <img width="600" height="400" data-src="img/main.png">
                 <p style="font-size:25px;text-align:center"><a href="http://xamarin.com/download">http://xamarin.com/download</a></p>
             </section>
-            
+
             <section>
-                <h3>개발환경 구성</h3>
                 <img width="485" height="300" data-src="img/framework.png">
             </section>
-            
+
             <section>
-                <h3>개발환경 구성</h3>
                 <img width="600" height="500" data-src="img/xamarin Installer1.png">
             </section>
-            
+
             <section>
-                <h3>개발환경 구성</h3>
                 <img width="600" height="500" data-src="img/xamarin Installer2.png">
             </section>
-            
+
             <section>
-                <h3>개발환경 구성</h3>
                 <img width="600" height="500" data-src="img/xamarin Installer3.png">
             </section>
-            
+
             <section>
-                <h3>개발환경 구성</h3>
                 <img width="600" height="500" data-src="img/xamarin Installer4.png">
             </section>
-            
+
             <section>
-                <h3>개발환경 구성</h3>
                 <img width="600" height="500" data-src="img/xamarin Installer5.png">
             </section>
-            
+
             <section>
-                <h3>개발환경 구성</h3>
                 <img width="600" height="500" data-src="img/xamarin Installer6.png">
             </section>
-            
-          <section>
-            <h3>개발환경 구성</h3>
-            <img width="600" height="500" data-src="img/xamarin Installer7.png">
-          </section>
-            
-          <section>
-            <h3>개발환경 구성</h3>
-            <img width="600" height="500" data-src="img/xamarin Installer8.png">
-          </section>
-            
-          <section>
-            <h3>개발환경 구성</h3>
-            <img width="600" height="500" data-src="img/xamarin Installer9.png">
-          </section>
-            
-          <section>
-            <h3>개발환경 구성</h3>
-            <img width="600" height="500" data-src="img/xamarin Installer10.png">
-          </section>
-            
-          <section>
-            <h3>개발환경 구성</h3>
-            <img width="600" height="500" data-src="img/xamarin Installer11.png">
-          </section>
-            
-          <section>
-            <h3>개발환경 구성</h3>
-            <img width="600" height="500" data-src="img/xamarinend.png">
-          </section>
-            
-          <section>
-              <h3>개발환경 구성</h3>
-            <img width="800" height="600" data-src="img/studio.png">
-          </section>
-            
-          <section>
-              <h3>Emulator 환경구성</h3>
-              <br/>
-              <div style="text-align:left">
-                <p style="font-size:30px">Android</p>
-                <p style="font-size:25px">     - Android Emulator에 느린 속도를 회피하기 위해서 지니모션 사용</p>
-                <p style="font-size:30px">IOS</p>
-                 <p style="font-size:25px">    - 추후 업데이트 예정...</p>
-              </div>
-          </section>
-            
-          <section>
-              <h3>지니모션 환경구성</h3>
-              <img width="300" height="300" data-src="img/지니0.png">
-              <div style="text-align:left">
-                <p style="font-size:25px;text-align:center"><a href="https://www.genymotion.com/download/">https://www.genymotion.com/download/</a></p>  
-                <p style="font-size:25px">1. 버추어박스 합본 버전</p>
-                <p style="font-size:25px">2. 지니모션 단일 버전</p>
-                <p style="font-size:25px">※ 지니모션은 버추어박스가 필수로 필요함</p>
-              </div>
-          </section>
-            
-        <section>
-              <h3>지니모션 환경구성</h3>
-              <img width="600" height="500" data-src="img/지니1.png">
-        </section>
-            
+
             <section>
-              <h3>지니모션 환경구성</h3>
-              <img width="600" height="500" data-src="img/지니2.png">
-        </section>
-            
+                <img width="600" height="500" data-src="img/xamarin Installer7.png">
+            </section>
+
             <section>
-              <h3>지니모션 환경구성</h3>
-              <img width="600" height="500" data-src="img/지니3.png">
-        </section>
-            
-               <section>
-              <h3>지니모션 환경구성</h3>
-              <img width="600" height="500" data-src="img/지니4.png">
-        </section>
-            
-               <section>
-              <h3>지니모션 환경구성</h3>
-              <img width="600" height="500" data-src="img/지니5.png">
-        </section>
-            
-              <section>
-              <h3>지니모션 환경구성</h3>
-              <img width="600" height="500" data-src="img/지니6.png">
-        </section>
-            
-             <section>
-              <h3>지니모션 환경구성</h3>
-              <img width="600" height="500" data-src="img/지니7.png">
-        </section>
-            
-               <section>
-              <h3>지니모션 환경구성</h3>
-              <img width="600" height="500" data-src="img/지니8.png">
-        </section>
-            
+                <img width="600" height="500" data-src="img/xamarin Installer8.png">
+            </section>
+
             <section>
-              <h3>지니모션 환경구성</h3>
-              <img width="600" height="500" data-src="img/지니9.png">
-        </section>
-            
+                <img width="600" height="500" data-src="img/xamarin Installer9.png">
+            </section>
+
             <section>
-              <h3>지니모션 환경구성</h3>
-              <img width="370" height="600" data-src="img/지니실행.png">
-        </section>
-            
-           <section>
-              <h3>지니모션 환경구성</h3>
-               <div style="text-align:left">
-                   <p style="font-size:25px"><a href="https://www.dropbox.com/s/7itudhfkxfcpj10/Genymotion-ARM-Translation_v1.1.zip"># ARM Translation(APK 설치 지원)</a></p>  
-                   <p style="font-size:25px"><a href="http://goo.im/gapps/gapps-jb-20130813-signed.zip"># Goodle Apps for Android 4.3</a></p>
-                   <p style="font-size:25px"><a href="http://goo.im/gapps/gapps-jb-20130812-signed.zip"># Goodle Apps for Android 4.2</a></p>
-                   <p style="font-size:25px"><a href="http://goo.im/gapps/gapps-jb-20121011-signed.zip"># Goodle Apps for Android 4.1</a></p>
-              </div>
-        </section>
-            
-            
-            
+                <img width="600" height="500" data-src="img/xamarin Installer10.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/xamarin Installer11.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/xamarinend.png">
+            </section>
+
+            <section>
+                <img width="800" height="600" data-src="img/studio.png">
+            </section>
+
+            <section>
+                <h3>Emulator 환경구성</h3>
+                <br/>
+                <div style="text-align:left">
+                    <p style="font-size:30px">Android</p>
+                    <p style="font-size:25px"> - Android Emulator에 느린 속도를 회피하기 위해서 지니모션 사용</p>
+                    <p style="font-size:30px">IOS</p>
+                    <p style="font-size:25px"> - Mac 환경을 구축해야함</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>지니모션 환경구성</h3>
+            </section>
+
+            <section>
+                <img width="300" height="300" data-src="img/지니0.png">
+                <div style="text-align:left">
+                    <p style="font-size:25px;text-align:center"><a href="https://www.genymotion.com/download/">https://www.genymotion.com/download/</a></p>
+                    <p style="font-size:25px">1. 버추어박스 합본 버전</p>
+                    <p style="font-size:25px">2. 지니모션 단일 버전</p>
+                    <p style="font-size:25px">※ 지니모션은 버추어박스가 필수로 필요함</p>
+                </div>
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니1.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니2.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니3.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니4.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니5.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니6.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니7.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니8.png">
+            </section>
+
+            <section>
+                <img width="600" height="500" data-src="img/지니9.png">
+            </section>
+
+            <section>
+                <img width="370" height="600" data-src="img/지니실행.png">
+            </section>
+
+            <section>
+                <div style="text-align:left">
+                    <p style="font-size:25px"><a href="https://www.dropbox.com/s/7itudhfkxfcpj10/Genymotion-ARM-Translation_v1.1.zip"># ARM Translation(APK 설치 지원)</a></p>
+                    <p style="font-size:25px"><a href="http://goo.im/gapps/gapps-jb-20130813-signed.zip"># Goodle Apps for Android 4.3</a></p>
+                    <p style="font-size:25px"><a href="http://goo.im/gapps/gapps-jb-20130812-signed.zip"># Goodle Apps for Android 4.2</a></p>
+                    <p style="font-size:25px"><a href="http://goo.im/gapps/gapps-jb-20121011-signed.zip"># Goodle Apps for Android 4.1</a></p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Xamarin.Forms</h2>
+            </section>
+            <section>
+                <div style="text-align:left">
+                    <p style="font-size:25px">0. XAML 시작하기</p>
+                    <p style="font-size:25px">1. Hello, Xamarin.Forms</p>
+                    <p style="font-size:25px">2. User Interface</p>
+                    <p style="font-size:25px">3. DependencyService</p>
+                    <p style="font-size:25px">4. Web Services</p>
+                    <p style="font-size:25px">5. Advanced Topics</p>
+                    <p style="font-size:25px"><a href="https://developer.xamarin.com/guides/xamarin-forms/creating-mobile-apps-xamarin-forms/">7. Creating Mobile Apps with Xamarin.Forms Book Preview 2</a></p>
+                </div>
+            </section>
+
+            <!--XAML Basics -->
+            <section>
+                <p style="font-size:30px">XAML 기본 내용</p>
+                <div style="text-align:left">
+                    <p style="font-size:25px">1. XAML 시작하기</p>
+                    <p style="font-size:25px">2. 필수 XAML 구문</p>
+                    <p style="font-size:25px">3. XAML 태그 확장</p>
+                    <p style="font-size:25px">4. 데이터 바인딩 기본 사항</p>
+                </div>
+            </section>
+
+            <!-- 1. XAML 시작하기<-->
+            <section>
+                <p style="font-size:30px">1. XAML 시작하기</p>
+                <p style="font-size:20px">요소와 속성을 가진 페이지를 정의</p>
+                <br/>
+                <div style="text-align:left">
+                    <p style="font-size:30px">Xamarin.Forms 애플리케이션에서는 대부분 XAML 페이지의 내용을 시각적으로 정의하는 데 사용됩니다. XAML 파일은 항상 마크 업 코드 지원을 제공하는 C # 코드 파일과 연관됩니다. 이 두 파일은 아이뷰 및 재산 초기화를 포함하는 새로운 클래스 정의를 포함합니다.. XAML 파일 내에서 클래스와 속성은 XML 요소와 속성을 참조하고, 마크 업 및 코드 사이의 링크가 설정됩니다.</p>
+                </div>
+            </section>
+
+            <!-- 1. XAML 시작하기<-->
+            <section>
+                <p style="font-size:30px">1. XAML 시작하기</p>
+                <p style="font-size:20px">솔루션 만들기</p>
+                <p style="font-size:15px">
+                    자마린 스튜디오, 선택 메뉴에서 파일> 새로 만들기> 솔루션 > Cross-Platform > APP > Xarmin.Forms.App 선택
+                </p>
+                <img width="900" height="580" data-src="img/XamrinBasic0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">1. XAML 시작하기</p>
+                <p style="font-size:20px">솔루션 만들기</p>
+                <p style="font-size:15px">
+                    자마린 스튜디오, 선택 메뉴에서 파일> 새로 만들기> 솔루션 > Cross-Platform > APP > Xarmin.Forms.App 선택
+                </p>
+                <img width="900" height="580" data-src="img/XamrinBasic0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">1. XAML 시작하기</p>
+                <p style="font-size:20px">솔루션 만들기</p>
+                <p style="font-size:15px">
+                    Next 선택
+                </p>
+                <img width="900" height="580" data-src="img/XamrinBasic1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">1. XAML 시작하기</p>
+                <p style="font-size:20px">페이지 만들기</p>
+                <p style="font-size:15px">
+                    XAML 샘플 프로젝트를 마우스 오른쪽 단추로 클릭> 추가> 새파일> Forms ContentPage Xaml 선택
+                </p>
+                <img width="900" height="580" data-src="img/XamrinBasic3.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">1. XAML 시작하기</p>
+                <p style="font-size:20px">XAML 클래스</p>
+                <p style="font-size:15px">두네임스페이스(xmlns)는 별도의 기능은 없고 버전을 표시하는데 사용합니다.</p>
+                <p style="font-size:15px">X 접두사가 선언 직후, 해당 접두어는 클래스라는 속성에 사용됩니다</p>
+                <p style="font-size:15px">X:XamlSamples 네임스페이스의 HelloXamlPage 클래스를 의미 합니다. </p>
+                <img width="900" height="150" data-src="img/XamrinBasic4.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">1. XAML 시작하기</p>
+                <p style="font-size:20px">App 실행페이지 선택 </p>
+                <p style="font-size:15px">HelloXamlPage의 인스턴스로 MainPage을 설정을하면 App의 시작페이지를 선택할수 있습니다.</p>
+                <img width="900" height="400" data-src="img/XamrinBasic6.png">
+            </section>
+
+            <!-- 2. 필수 XAML 구문-->
+            <section>
+                <p style="font-size:30px">2. 필수 XAML 구문</p>
+                <p style="font-size:20px">Property Elements</p>
+                <p style="font-size:20px">XML 속성으로 XAML에서 클래스의 속성은 일반적으로 설정됩니다.</p>
+                <img width="900" height="300" data-src="img/XamrinBasic7.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">2. 필수 XAML 구문</p>
+                <p style="font-size:20px">Property Elements</p>
+                <p style="font-size:20px"> 새로운 태그의 콘텐츠와 속성 값을 설정합니다.</p>
+                <img width="900" height="300" data-src="img/XamrinBasic8.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">2. 필수 XAML 구문</p>
+                <p style="font-size:20px">Property Elements</p>
+                <div style="text-align:left">
+                    <p style="font-size:20px">텍스트 색상 속성을 지정하려면 다음 두 가지 방법으로 기능적으로 동일하지만 효과적으로 두 배의 속성을 설정 될 수 있기 때문에 동일한 속성에 대해 두 가지 방법을 사용할 수 없습니다.</p>
+                    <p style="font-size:20px">라벨은 오브젝트 요소입니다. 라벨은 XML요소로 표현 Xamarin.Forms 객체입니다.</p>
+                    <p style="font-size:20px">텍스트, 수직 옵션, 글꼴 속성 및 폰트 크기 속성의 속성입니다. XML 속성으로 표현 Xamarin.Forms의 속성입니다.</p>
+                    <p style="font-size:20px">마지막 구문의 텍스트 색상 속성 요소가되고있다. 그것은 Xamarin.Forms 특성이지만 XML 엘리먼트로 표현 됩니다. </p>
+                    <p style="font-size:20px">property 요소의 정의는 처음에는 XML 문법을 위반하는 것으로 보일 수 있지만, XML에서 특별한 의미가 없습니다. Label.Text 색상은 단순히 정상적인 자식 요소입니다.</p>
+                </div>
+            </section>
+
+            <section>
+                <p style="font-size:30px">2. 필수 XAML 구문</p>
+                <p style="font-size:20px">Grid</p>
+                <div style="text-align:left">
+                    <p style="font-size:20px">그리드는 두 가지 속성의 RowDefinitions 및 ColumnDefinitions 있습니다.</p>
+                    <p style="font-size:20px">RowDefinitions : 행을 지정할수 있는 속성</p>
+                    <p style="font-size:20px">ColumnDefinitions : 열을 지정할수 있는 속성</p>
+                </div>
+                <img width="780" height="400" data-src="img/XamrinBasic9.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">2. 필수 XAML 구문</p>
+                <p style="font-size:20px">OnPlatform</p>
+                <div style="text-align:left">
+                    <p style="font-size:20px">아이폰에 상태 표시 줄을 중복 방지하기 위해 사용하고 특정 Platform 속성을 정의 합니다.</p>
+                </div>
+                <img width="780" height="400" data-src="img/XamrinBasic10.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">2. 필수 XAML 구문</p>
+                <p style="font-size:20px">Attached Properties(첨부속성)</p>
+                <div style="text-align:left">
+                    <p style="font-size:20px">그리드는 행과 열을 정의하는 RowDefinitions, ColumnDefinitions 컬렉션에 대한 속성 요소를 필요로합니다. 또한 그리드의 각각의 자식이 있는 행 및 열을 나타내는 방법이 있어야 합니다.</p>
+                    <p style="font-size:20px">그리드의 자식의 대한 태그 내에서 다음과 같은 속성을 사용하여 행과 열을 지정합니다.</p>
+                    <p style="font-size:20px">Grid.RowSpan, Grid.ColumnSpan이 두 속성은 하나의 기본 값을 가져야 합니다.</p>
+                </div>
+                <img width="780" height="400" data-src="img/XamrinBasic11.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">3. XAML 태그 확장</p>
+                <p style="font-size:20px">Shared Resources(공유 자원)</p>
+                <div style="text-align:left">
+                    <p style="font-size:20px">XAML에서는 ResourceDictionary에 속성값을 저장해서 사용합니다.</p>
+                </div>
+                <img width="780" height="300" data-src="img/XamrinBasic12.png">
+                <img width="780" height="300" data-src="img/XamrinBasic13.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">4. 데이터 바인딩 기본 사항</p>
+                <p style="font-size:20px">View-to-View Bindings</p>
+                <div style="text-align:left">
+                    <p style="font-size:20px">데이터 바인딩은 같은 페이지에 두 개의 뷰의 속성을 연결 정의 할 수 있습니다. 참조 태그 확장 :이 경우 X를 사용하여 대상 개체의 BindingContext를 설정합니다.</p>
+                </div>
+                <img width="780" height="500" data-src="img/XamrinBasic14.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">4. 데이터 바인딩 기본 사항</p>
+                <p style="font-size:20px">Backwards Bindings</p>
+                <p style="font-size:20px"><a href="https://msdn.microsoft.com/ko-kr/library/ms752347(v=vs.110).aspx">Backwards Bindings</a></p>
+            </section>
+
+            <section>
+                <p style="font-size:50px">Hello, Xamarin.Forms Quickstart</p>
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="800" height="600" data-src="img/Quickstart00.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="800" height="600" data-src="img/Quickstart01.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="800" height="600" data-src="img/Quickstart02.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="800" height="600" data-src="img/Quickstart03.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart04.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart05.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart06.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart07.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart08.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart09.png">
+            </section>
+
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart10.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart11.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart12.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart13.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart14.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart15.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart16.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="940" height="550" data-src="img/Quickstart17.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="500" height="600" data-src="img/Quickstart18.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">Hello, Xamarin.Forms Quickstart</p>
+                <img width="500" height="600" data-src="img/Quickstart19.png">
+            </section>
+
+            <!--Phoneword Demo App-->
+            <section>
+                <p style="font-size:50px">Phoneword Demo App</p>
+            </section>
+
+            <!--2. User Interface -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts</p>
+                <img width="1500" height="500" data-src="img/Layouts.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ StackLayout</p>
+                <p style="font-size:20px">가로 또는 세로 방향으로 지정할 수 있는 단일 선에 따라 자식 요소를 정렬합니다.</p>
+                <img width="800" height="400" data-src="img/Layouts1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ StackLayout</p>
+                <img width="800" height="400" data-src="img/Layouts2.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ StackLayout</p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/Layouts4.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/Layouts3.png">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ AbsoluteLayout</p>
+                <p style="font-size:20px">자신의 크기와 절대 값을 기준으로 자식 요소를 정렬합니다.</p>
+                <img width="800" height="400" data-src="img/Layouts5.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ AbsoluteLayout</p>
+                <img width="820" height="530" data-src="img/Layouts6.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ AbsoluteLayout</p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/Layouts7.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/Layouts8.png">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ RelativeLayout</p>
+                <p style="font-size:20px"> 전체적인 레이아웃 또는 두 개의 다른보기에 관하여 화면 뷰를 정확히 위치 시키는데 사용할 수있다.</p>
+                <img width="800" height="400" data-src="img/Layouts9.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ RelativeLayout</p>
+                <div>
+                    <img width="400" height="600" data-src="img/Layouts10.png">
+                </div>
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ Grid</p>
+                <p style="font-size:20px">그리드는 행과 열로 자식 요소를 정렬합니다.</p>
+                <img width="800" height="400" data-src="img/Layouts11.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ Grid</p>
+                <img width="820" height="530" data-src="img/Layouts12.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ Grid</p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/Layouts13.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/Layouts14.png">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ ScrollView</p>
+
+                <img width="800" height="400" data-src="img/Layouts15.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ ScrollView</p>
+                <img width="820" height="530" data-src="img/Layouts16.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Layouts ▶ ScrollView</p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/Layouts17.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/Layouts18.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--Layouts Demo App-->
+            <section>
+                <p style="font-size:50px">Layout Demo App</p>
+            </section>
+
+            <!--3. User Interface ▶ Navigation-->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation</p>
+                <img width="1500" height="500" data-src="img/Navigation.png">
+            </section>
+
+            <!--3. User Interface ▶ Navigation ▶ Master-Detail Page -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Master-Detail Page</p>
+                <p style="font-size:19px;margin-bottom:35px;">항목을 제시하는 마스터 페이지, 마스터 페이지의 항목에 대한 세부 정보를 표시하는 디테일 페이지를 제공합니다.</p>
+                <img width="1500" height="500" data-src="img/MasterDetaiPage0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Master-Detail Page</p>
+                <img width="700" height="300" data-src="img/MasterDetaiPage1.png">
+                <img width="700" height="300" data-src="img/MasterDetaiPage2.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Master-Detail Page</p>
+                <img width="700" height="500" data-src="img/MasterDetaiPage3.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Master-Detail Page</p>
+                <img width="700" height="500" data-src="img/MasterDetaiPage4.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Master-Detail Page</p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/MasterDetaiPage5.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/MasterDetaiPage6.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--3. User Interface ▶ Navigation ▶ Navigation Page -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Navigation Page</p>
+                <p style="font-size:20px;margin-bottom:35px;">NavigationPage는 사용자가 원하는대로 앞뒤로 페이지를 탐색 할 수있는 계층적 탐색을 제공합니다.</p>
+                <p style="font-size:20px">Next</p>
+                <img width="500" height="100" data-src="img/Navigation1.png">
+                <p style="font-size:20px">Back</p>
+                <img width="500" height="100" data-src="img/Navigation2.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Navigation Page</p>
+                <img width="1500" height="630" data-src="img/Navigation4.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Navigation Page</p>
+                <img width="1500" height="500" data-src="img/Navigation3.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Navigation Page</p>
+                <div>
+                    <div style="float:left">
+                        <img width="350" height="300" data-src="img/Navigation5.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="350" height="300" data-src="img/Navigation6.png">
+                    </div>
+                </div>
+                <div>
+                    <div style="float:left">
+                        <img width="350" height="300" data-src="img/Navigation7.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="350" height="300" data-src="img/Navigation5.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--3. User Interface ▶ Navigation ▶ Tabbed Page -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Tabbed Page</p>
+                <p style="font-size:20px;margin-bottom:35px;">탭을 사용하여 페이지 탐색을 제공합니다.</p>
+                <img width="1500" height="500" data-src="img/tabbedpage0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Tabbed Page</p>
+                <img width="1500" height="630" data-src="img/tabbedpage1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Tabbed Page</p>
+                <img width="1500" height="630" data-src="img/tabbedpage2.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Tabbed Page</p>
+                <img width="1500" height="630" data-src="img/tabbedpage3.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Tabbed Page</p>
+                <div>
+                    <div style="float:left">
+                        <img width="350" height="300" data-src="img/tabbedpage4.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="350" height="300" data-src="img/tabbedpage5.png">
+                    </div>
+                </div>
+                <div>
+                    <div style="float:left">
+                        <img width="350" height="300" data-src="img/tabbedpage6.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="350" height="300" data-src="img/tabbedpage5.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--3. User Interface ▶ Navigation ▶ Carousel Page-->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Carousel Page</p>
+                <p style="font-size:20px;margin-bottom:35px;">제스처를 사용하여 페이지 탐색을 제공합니다.</p>
+                <img width="1500" height="500" data-src="img/CarouselPage0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Carousel Page</p>
+                <img width="1500" height="630" data-src="img/CarouselPage1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Carousel Page</p>
+                <img width="1500" height="630" data-src="img/CarouselPage2.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Carousel Page</p>
+                <div>
+                    <div style="float:left">
+                        <img width="350" height="300" data-src="img/CarouselPage3.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="350" height="300" data-src="img/CarouselPage4.png">
+                    </div>
+                </div>
+                <div>
+                    <div style="float:left">
+                        <img width="350" height="300" data-src="img/CarouselPage5.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="350" height="300" data-src="img/CarouselPage6.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--3. User Interface ▶ Navigation ▶ Displaying Pop-ups-->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Displaying Pop-ups</p>
+                <p style="font-size:20px;margin-bottom:35px;">사용자에게 경고,표시 및 안내 메시지 팝업을 제공합니다.</p>
+                <img width="1500" height="500" data-src="img/DisplayingPopups0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Displaying Pop-ups</p>
+                <img width="1500" height="630" data-src="img/DisplayingPopups1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Navigation ▶ Displaying Pop-ups</p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/DisplayingPopups2.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/DisplayingPopups3.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--Navigation Demo App-->
+            <section>
+                <p style="font-size:50px">Navigation Demo App</p>
+            </section>
+
+            <!--4. User Interface ▶ Styles -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Styles</p>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:17px;margin-bottom:55px;">Explicit Styles(명시적 스타일) : 선택적으로 자신의 스타일 속성을 설정하여 컨트롤에 적용됩니다.</li>
+                        <li style="font-size:17px;margin-bottom:55px;">Implicit Styles(암시적 스타일) : 스타일을 참조하는 각 컨트롤을 필요로하지 않고, TargetType의 모든 컨트롤에 적용됩니다. </li>
+                        <li style="font-size:17px;margin-bottom:55px;">Global Styles(글로벌 스타일) : 애플리케이션의 ResourceDictionary에 추가하여 전체적으로 컨트롤에 적용됩니다.</li>
+                        <li style="font-size:17px;margin-bottom:55px;">Style Inheritance(스타일 상속) : 스타일은 중복을 줄이고 재사용을 하기 위해 다른 스타일에서 상속 할 수 있습니다.</li>
+                        <li style="font-size:17px;margin-bottom:55px;">Dynamic Styles(동적 스타일) : 응용 프로그램은 동적 리소스를 사용하여 런타임에 동적으로 스타일의 변화에 반응합니다.</li>
+                        <li style="font-size:17px;margin-bottom:55px;">Device Styles(장비 스타일) : Xamarin.Forms 여섯 가자의Devices.Styles 제공합니다.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--4. User Interface ▶ Styles ▶ Explicit Styles -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Styles ▶ Explicit Styles</p>
+                <p style="font-size:20px;margin-bottom:35px;">선택적으로 자신의 스타일 속성을 설정하여 컨트롤에 적용됩니다.</p>
+                <img width="1500" height="600" data-src="img/ExplicitStyles0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Styles ▶ Explicit Styles</p>
+                <img width="500" height="600" data-src="img/ExplicitStyles1.png">
+            </section>
+
+            <!--4. User Interface ▶ Styles ▶ Implicit Styles -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Styles ▶ Implicit Styles</p>
+                <p style="font-size:20px;margin-bottom:35px;">스타일을 참조하는 각 컨트롤을 필요로하지 않고, TargetType의 모든 컨트롤에 적용됩니다.</p>
+                <img width="1500" height="600" data-src="img/ImplicitStyle0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Styles ▶ Implicit Styles</p>
+                <img width="500" height="600" data-src="img/ImplicitStyle1.png">
+            </section>
+
+            <!--4. User Interface ▶ Styles ▶ Global Styles -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Styles ▶ Global Styles</p>
+                <p style="font-size:20px;margin-bottom:35px;">애플리케이션의 ResourceDictionary에 추가하여 전체적으로 컨트롤에 적용됩니다.</p>
+                <img width="1500" height="600" data-src="img/GlobalStyles0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Styles ▶ Global Styles</p>
+                <img width="500" height="600" data-src="img/GlobalStyles1.png">
+            </section>
+
+            <!--4. User Interface ▶ Styles ▶ Style Inheritance -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Styles ▶ Style Inheritance</p>
+                <p style="font-size:20px;margin-bottom:35px;">스타일은 중복을 줄이고 재사용을 하기 위해 다른 스타일에서 상속 할 수 있습니다.</p>
+                <img width="1500" height="600" data-src="img/StyleInheritance0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Styles ▶ Style Inheritance</p>
+                <img width="500" height="600" data-src="img/StyleInheritance1.png">
+            </section>
+
+            <!--4. User Interface ▶ Styles ▶ Dynamic Styles -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Styles ▶ Dynamic Styles</p>
+                <p style="font-size:20px;margin-bottom:35px;">응용 프로그램은 동적 리소스를 사용하여 런타임에 동적으로 스타일의 변화에 반응합니다.</p>
+                <img width="1500" height="600" data-src="img/DynamicStyles0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Styles ▶ Dynamic Styles</p>
+                <img width="1500" height="600" data-src="img/DynamicStyles1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Styles ▶ Dynamic Styles</p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/DynamicStyles2.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/DynamicStyles3.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--4. User Interface ▶ Styles ▶ Device Styles -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Styles ▶ Device Styles</p>
+                <p style="font-size:20px;margin-bottom:35px;">Xamarin.Forms 여섯 가자의Devices.Styles 제공합니다</p>
+                <p style="font-size:20px;margin-bottom:35px;">BodyStyle, CaptionStyle, ListItemDetailTextStyle, ListItemTextStyle, SubtitleStyle, TitleStyle</p>
+                <img width="1500" height="500" data-src="img/DeviceStyles0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Styles ▶ Device Styles</p>
+                <img width="500" height="600" data-src="img/DeviceStyles1.png">
+            </section>
+
+            <!--Styles Demo App-->
+            <section>
+                <p style="font-size:50px">Styles Demo App</p>
+            </section>
+
+            <!--5. User Interface ▶ ListView -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView </p>
+                <p style="font-size:20px;margin-bottom:35px;">Data를 List 형식으로 출력해주는 View를 제공합니다.</p>
+                <img width="1500" height="500" data-src="img/Listview0.png">
+            </section>
+
+            <!--5. User Interface ▶ ListView ▶ Data Sources -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Data Sources</p>
+                <img width="1500" height="200" data-src="img/Listview1.png">
+                <img width="1500" height="350" data-src="img/Listview2.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Data Sources </p>
+                <img width="500" height="600" data-src="img/Listview3.png">
+            </section>
+
+            <!--5. User Interface ▶ ListView ▶ Data Binding -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Data Binding</p>
+                <img width="1500" height="600" data-src="img/Listview4.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Data Binding</p>
+                <img width="1500" height="600" data-src="img/Listview5.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Data Binding </p>
+                <img width="500" height="600" data-src="img/Listview6.png">
+            </section>
+
+            <!--5. User Interface ▶ ListView ▶ Cell Appearance(Text Cell) -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Cell Appearance(Text Cell)</p>
+                <img width="1500" height="600" data-src="img/Listview7.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Cell Appearance(Text Cell)</p>
+                <img width="1500" height="600" data-src="img/Listview8.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Cell Appearance(Text Cell)</p>
+                <img width="500" height="600" data-src="img/Listview9.png">
+            </section>
+
+            <!--5. User Interface ▶ ListView ▶ Cell Appearance(Image Cell) -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Cell Appearance(Image Cell)</p>
+                <img width="1500" height="600" data-src="img/Listview10.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Cell Appearance(Image Cell)</p>
+                <img width="1500" height="600" data-src="img/Listview11.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Cell Appearance(Image Cell)</p>
+                <img width="500" height="600" data-src="img/Listview12.png">
+            </section>
+
+            <!--5. User Interface ▶ ListView ▶ Cell Appearance(Custom Cells) -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Cell Appearance(Custom Cells)</p>
+                <img width="1500" height="600" data-src="img/Listview13.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Cell Appearance(Custom Cells)</p>
+                <img width="1500" height="600" data-src="img/Listview14.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Cell Appearance(Custom Cells)</p>
+                <img width="500" height="600" data-src="img/Listview15.png">
+            </section>
+
+            <!--5. User Interface ▶ ListView ▶ List Appearance(Grouping) -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ List Appearance(Grouping)</p>
+                <img width="1500" height="600" data-src="img/Listview16.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ List Appearance(Grouping)</p>
+                <img width="1500" height="600" data-src="img/Listview17.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ List Appearance(Grouping)</p>
+                <img width="1500" height="600" data-src="img/Listview18.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ List Appearance(Grouping)</p>
+                <img width="500" height="600" data-src="img/Listview19.png">
+            </section>
+
+            <!--5. User Interface ▶ ListView ▶ Interactivity(Selection & Taps & Pull to Refresh) -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Interactivity(Selection & Refresh)</p>
+                <img width="1500" height="600" data-src="img/Listview20.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Interactivity(Selection & Refresh)</p>
+                <img width="1500" height="600" data-src="img/Listview21.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ Interactivity(Selection & Refresh)</p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/Listview22.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/Listview23.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--6. User Interface ▶ ListView ▶ Performance(추후 데모 및 앱 개발시 필요사항) -->
+            <!--ListView Demo App-->
+            <section>
+                <p style="font-size:50px">ListView Demo App</p>
+            </section>
+
+            <!--7. User Interface ▶ ListView ▶ Map Control -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Map Control </p>
+                <p style="font-size:20px;margin-bottom:35px;">사용자를위한 빠르고 익숙한지도 제공합니다.</p>
+                <img width="1500" height="500" data-src="img/MapControl0.jpg">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Map Control </p>
+                <img width="1500" height="500" data-src="img/MapControl1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Map Control </p>
+                <img width="1500" height="300" data-src="img/MapControl2.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Map Control </p>
+                <img width="1500" height="500" data-src="img/MapControl3.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Map Control </p>
+                <img width="1500" height="500" data-src="img/MapControl4.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Map Control </p>
+                <img width="1500" height="300" data-src="img/MapControl5.png">
+            </section>
+
+            <section>
+                보안때문에 안됨 집에서 추가코딩 및 자료 정리하기.
+            </section>
+
+            <!--Map Demo App-->
+            <section>
+                <p style="font-size:50px">Map Demo App</p>
+            </section>
+
+            <!--8. User Interface ▶ ListView ▶ TableView -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ TableView </p>
+                <p style="font-size:20px;margin-bottom:35px;">동일한 템플릿을 공유하지 않는 행이나 데이터 를 표시하기위한 View입니다.</p>
+                <p style="font-size:20px;margin-bottom:35px;">TableView는 ItemsSource의 개념이 없습니다.</p>
+                <img width="1500" height="500" data-src="img/TableView0.png">
+            </section>
+
+
+            <!--8. User Interface ▶ ListView ▶ TableView ▶ Basic -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ TableView ▶ Basic</p>
+                <img width="1500" height="500" data-src="img/TableView4.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ TableView ▶ Basic</p>
+                <img width="400" height="600" data-src="img/TableView5.png">
+            </section>
+
+            <!--8. User Interface ▶ ListView ▶ TableView ▶ Built-In Cells -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ TableView ▶ Built-In Cells</p>
+                <img width="1500" height="500" data-src="img/TableView1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ ListView ▶ TableView ▶ Built-In Cells</p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/TableView2.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/TableView3.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--TableView Demo App-->
+            <section>
+                <p style="font-size:50px">TableView Demo App</p>
+            </section>
+
+            <!--9. User Interface ▶ ListView ▶ WebView-->
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView </p>
+                <p style="font-size:20px;margin-bottom:35px;">웹 및 HTML 콘텐츠를 표시하는 View 입니다.</p>
+                <img width="1500" height="500" data-src="img/WebView0.png">
+            </section>
+
+            <!--9. User Interface ▶ ListView ▶ WebView ▶ Basic -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Basic </p>
+                <img width="1500" height="500" data-src="img/WebView1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Basic </p>
+                <img width="500" height="600" data-src="img/WebView2.png">
+            </section>
+
+            <!--9. User Interface ▶ ListView ▶ WebView ▶ Navigation -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Navigation </p>
+                <img width="1500" height="500" data-src="img/WebView3.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Navigation </p>
+                <img width="1500" height="500" data-src="img/WebView4.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Navigation </p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/WebView5.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/WebView6.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--9. User Interface ▶ ListView ▶ WebView ▶ Loding -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Loding </p>
+                <img width="1500" height="500" data-src="img/WebView7.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Loding </p>
+                <img width="1500" height="500" data-src="img/WebView8.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ WebView ▶ Loding </p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/WebView9.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/WebView10.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--WebView Demo App-->
+            <section>
+                <p style="font-size:50px">WebView Demo App</p>
+            </section>
+
+            <!--10. User Interface ▶ Gestures -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Gestures</p>
+                <p style="font-size:20px;margin-bottom:35px;">컨트롤에 탭, 핀치 및 팬 제스처를 지원합니다.</p>
+                <img width="1500" height="500" data-src="img/Gestures0.png">
+            </section>
+
+            <!--10. User Interface ▶ ListView ▶ Gestures ▶ Tab -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Gestures ▶ Tab </p>
+                <img width="1500" height="500" data-src="img/Gestures1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Gestures ▶ Tab </p>
+                <img width="1500" height="500" data-src="img/Gestures2.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Gestures ▶ Tab </p>
+                <img width="1500" height="380" data-src="img/Gestures3.png">
+                <img width="1500" height="200" data-src="img/Gestures4.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Gestures ▶ Tab</p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/Gestures5.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/Gestures6.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--10. User Interface ▶ ListView ▶ Gestures ▶ Pinch Gesture -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Gestures ▶ Pinch Gesture </p>
+                <img width="1500" height="500" data-src="img/Gestures7.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Gestures ▶ Pinch Gesture </p>
+                <img width="500" height="600" data-src="img/Gestures8.png">
+            </section>
+
+            <!--10. User Interface ▶ ListView ▶ Gestures ▶ Pan Gesture -->
+            <section>
+                <p style="font-size:30px">User Interface ▶ Gestures ▶ Pan Gesture </p>
+                <img width="1500" height="500" data-src="img/Gestures9.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">User Interface ▶ Gestures ▶ Pan Gesture</p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/Gestures10.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/Gestures11.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--Gestures Demo App-->
+            <section>
+                <p style="font-size:50px">Gestures Demo App</p>
+            </section>
+
+            <!--11. DependencyService  -->
+            <section>
+                <p style="font-size:30px">DependencyService ▶ Introduction </p>
+                <p style="font-size:20px;margin-bottom:35px;">Xamarin.Forms에서 DependencyService를 이용해서 플래폼별 기능을 제어할수 있습니다.</p>
+                <img width="1500" height="500" data-src="img/DependencyService0.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">DependencyService ▶ Introduction </p>
+                <img width="1500" height="500" data-src="img/DependencyService5.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">DependencyService ▶ Checking Battery </p>
+                <img width="1500" height="500" data-src="img/DependencyService1.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">DependencyService ▶ Checking Battery </p>
+                <img width="1500" height="500" data-src="img/DependencyService2.png">
+            </section>
+
+            <section>
+                <p style="font-size:30px">DependencyService ▶ Checking Battery </p>
+                <div>
+                    <div style="float:left">
+                        <img width="400" height="600" data-src="img/DependencyService3.png">
+                    </div>
+                    <div style="float:right">
+                        <img width="400" height="600" data-src="img/DependencyService4.png">
+                    </div>
+                </div>
+            </section>
+
+            <!--DependencyService Demo App-->
+            <section>
+                <p style="font-size:50px">DependencyService Demo App</p>
+            </section>
+
+            <!--12. Web Services -->
+            <section>
+                <p style="font-size:30px">Web Services ▶ Introduction </p>
+                <p style="font-size:20px;margin-bottom:35px;">Xamarin.Forms은 다양한 웹 서비스를 사용할 수 있습니다.</p>
+                <img width="1500" height="500" data-src="img/WbServices0.jpg">
+            </section>
+
+            <section>
+                보안등등 이슈 문제로 집에서 업데이트하기.
+            </section>
+
+            <!--Web Services Demo App-->
+            <section>
+                <p style="font-size:50px">Web Services Demo App</p>
+            </section>
+
+            <!--13. Advanced Topics -->
+            <section>
+                <p style="font-size:30px">Advanced Topics</p>
+                보안등등 이슈 문제로 집에서 업데이트하기.
+            </section>
+
+            <!--13. Advanced Topics Demo App -->
+            <section>
+                <p style="font-size:50px">Advanced Topics Demo App</p>
+            </section>
+
+
+
+
+
+
+
+
 
         </div>
     </div>
@@ -236,7 +1404,6 @@
     <script src="../reveal/js/reveal.js"></script>
 
     <script>
-
         // Full list of configuration options available at:
         // https://github.com/hakimel/reveal.js#configuration
         Reveal.initialize({
@@ -246,17 +1413,37 @@
             center: true,
             transition: 'slide', // none/fade/slide/convex/concave/zoom
             // Optional reveal.js plugins
-            dependencies: [
-                { src: '../reveal/lib/js/classList.js', condition: function () { return !document.body.classList; } },
-                { src: '../reveal/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-                { src: '../reveal/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-                { src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
-                { src: '../reveal/plugin/zoom-js/zoom.js', async: true },
-                { src: '../reveal/plugin/notes/notes.js', async: true }
-            ]
+            dependencies: [{
+                src: '../reveal/lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: '../reveal/plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: '../reveal/plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: '../reveal/plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: '../reveal/plugin/zoom-js/zoom.js',
+                async: true
+            }, {
+                src: '../reveal/plugin/notes/notes.js',
+                async: true
+            }]
         });
-
     </script>
 
 </body>
+
 </html>
