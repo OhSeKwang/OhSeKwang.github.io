@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>Hybrid App Ionic</title>
@@ -18,15 +19,17 @@
         document.getElementsByTagName('head')[0].appendChild(link);
     </script>
 </head>
+
 <body>
     <div class="reveal">
         <div class="slides">
             <section>
                 <h1>Hello Html5</h1>
-                <br /><br />
+                <br />
+                <br />
                 <p>
-                    <small>Created by <a href="http://ohsekwang.github.io/">OhSeKwang 
-                        </a><a href="http://mostisoft.com">Mostisoft</a>. Alt + click anywhere to zoom back out.</small>
+                    <small>Created by <a href="http://ohsekwang.github.io/">원슬기 
+                        </a><a href="http://mostisoft.com">Mostisoft</a></small>
                 </p>
             </section>
 
@@ -394,7 +397,7 @@
                     </ul>
                 </div>
             </section>
-            
+
             <section>
                 <h4>HTML와 XHTML의 차이</h4>
                 <div style="float:left;margin-top:20px;">
@@ -409,7 +412,7 @@
                     </ul>
                 </div>
             </section>
-            
+
             <section>
                 <h4>HTML와 XHTML의 차이</h4>
                 <div style="float:left;margin-top:20px;">
@@ -421,20 +424,760 @@
                     <img width="722" height="82" data-src="img/HTML5의 차이점9.png">
                 </div>
             </section>
-            
+
             <section>
                 <h4>HTML와 XHTML의 차이</h4>
                 <div style="float:left;margin-top:20px;">
                     <ul>
-                        <li style="font-size:25px;margin-bottom:40px;">XHTML 1.0은 2000년 1월 26일에 W3C(World Wide Web Consortium)의 표준안이 되었고, 그 이후 버전인 XHTML 1.1은 2001년 5월 31일에 제출되었다. </li>
-                        <li style="font-size:25px;margin-bottom:40px;">HTML5의 일부가 된 XHTML5는 2009년 9월부터 개발이 진행되었었다. 웹 페이지가 XHTML로 만들어짐은 맨 처음 라인의 'DOCTYPE'을 통해서 구분할 수 있다.
+                        <li style="font-size:25px;margin-bottom:40px;">HTML5 이전에 사용된 HTML은 SGML(Standard Generalized Markup Language)의 어플리케이션 형태를 가지지만, XHTML은 보다 제한적인 SGML의 서브셋인 XML 어플리케이션 형태를 가진다.</li>
+                        <li style="font-size:25px;margin-bottom:40px;">XHTML은 파싱하기 까다로운 HTML과 달리 표준 XML 파서를 사용하여 파싱한다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">XHTML이 XML 문법을 따르므로 HTML과 문법 규칙이 약간 다르며, XHTML을 사용하면 가능하지만 HTML로는 불가능한 일이 존재한다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">또한, CSS와 클라이언트 쪽의 스크립트(자바 스크립트 등)를 다루는 방식에 차이가 있다.
                         </li>
                     </ul>
-                    <img width="722" height="82" data-src="img/HTML5의 차이점9.png">
                 </div>
             </section>
-            
-            
+
+            <section>
+                <h4>HTML와 XHTML의 차이</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">XHTML은 CDATA 섹션((![CDATA[ … ]]))을 사용할 수 있다.</li>
+                        <li style="font-size:25px;margin-bottom:40px;">이 섹션 안의 문자들은 태그로 처리되지 않기 때문에 별도로 이스케이프(escape)해 줄 필요가 없다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML에서 'script'와 'style' 엘리먼트들은 'CDATA' 엘리먼트로 파싱된다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">XML 문서에 스타일 시트를 연결시킬 수 있다.
+                        </li>
+                    </ul>
+                    <img width="722" height="82" data-src="img/HTML5의 차이점10.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML와 XHTML의 차이</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">XML 이름 영역(Namespace)에 있는 요소(Element)들을 포함시킬 수 있으며, 캐릭터 엔티티(Character entity)를 사용할 수 있다는 점이다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML/XHTML는 종료 태그의 비허용/허용으로 구분되며, HTML은 태그의 중첩이 잘못된 것을 허용하였으나 XHTML은 잘못된 중첩을 허용하지 않는다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML의 경우 (p), (td) 등의 태그에서 종료 태그를 생략하는 것을 허용하였지만 XHTML의 경우에는 반드시 사용해야 한다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML에서 (br), (hr)과 같이 콘텐트를 담지 않는 빈 태그들은 (br /), (hr /)과 같이 표기하여 시작태그에서 곧 종료됨을 표기해 주어야 한다.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML와 XHTML의 차이</h4>
+                <img width="862" height="338" data-src="img/HTML5의 차이점11.png">
+            </section>
+
+            <section>
+                <h4>HTML와 XHTML의 차이</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML은 엘리먼트(태그)와 속성에 대소문자를 함께 사용하는 것을 허용하였으나, XHTML의 마크업 '요소'와 '속성'들은 반드시 소문자로 표기해야만 한다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">속성 값을 사용할 때는 대소문자 혼합 표기가 가능하다는 점을 고려해야 한다. 여기서 대소문자의 구분은 명확해야 한다.
+                        </li>
+                    </ul>
+                    <img width="655" height="179" data-src="img/HTML5의 차이점12.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML와 XHTML의 차이</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">XHTML 1.1에는 (font)나 (align)과 같은 디자인 요소가 존재하지 않는다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">XHTML는 컨텐츠 의미만 표현하는 마크업 언어로 활용되며, 문서를 구조적일 뿐만 아니라 경량화하기 위함이다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">XHTML 1.1에서는 요소에 직접 스타일을 정의하지도 않는다.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>DOM의 정의</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">W3C에 의해 개발되고 있는 프로그래밍 인터페이스 규격인 DOM은 문서의 스타일, 구조, 컨텐츠를 동적으로 액세스하거나 업데이트하도록 하기 위한 플랫폼이자 인터페이스이다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">문서에 대한 구조적인 정보를 제공하고, 문서 구조나 스타일 및 내용을 변경할 수 있도록 프로그램에서 접근할 수 있는 방법을 제공하기 때문에 필수적이다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">DOM은 프로그래머가 HTML 페이지나 XML 문서들을 프로그램 객체로 만들거나 수정할 수 있도록 해준다.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>DOM의 정의</h4>
+                <div style="float:left;margin-top:25px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:15px;">DOM은 다음과 같은 두가지 계층의 인터페이스 구현을 제공한다.</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">XML을 지원하는 DOM Core : 다른 계층의 바탕을 구성</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:40px;">DOM HTML : 모델의 HTML 문서 확장</li>
+                        <li style="font-size:25px;margin-bottom:15px;">다음은 DOM 인터페이스가 가지는 특징에 대해서 정리한 내용이다.</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">HTML과 XML 요소의 프로그래밍을 통한 개별적인 주소지정이 가능</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">DOM 규격은 IDL을 사용하므로, 언어에 독립적임</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">DOM의 인터페이스는 자바 프로그래밍 언어와 ECMAScript로 기술</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>DOM 구조</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">DOM의 매력적인 장점이 바로 데이터 구조에 제한을 두지 않는다는 것이다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">문서가 구조화되어 있는 경우에는 DOM을 이용하여 쉽게 DOM 트리(Tree) 구조를 만들 수 있다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">문서 구조나 스타일 및 내용을 쉽게 바꿀 수 있도록 프로그램에서 접근할 수 있는 방법을 제공하기 위해서는 문서는 조작이 편하도록 구조적이어야 한다.
+                        </li>
+                    </ul>
+                    <img width="762" height="257" data-src="img/HTML5의 차이점13.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>DOM 구조</h4>
+                <div>
+                    <div style="float:left">
+                        <ul>
+                            <li style="font-size:25px;margin-bottom:40px;">웹 페이지를 사용자가 보기
+                                <br/> 위해서는 다음과 같은 5가지
+                                <br/> 단계를 거치게 된다.
+                            </li>
+                            <li style="font-size:25px;margin-bottom:40px;">이때 웹 페이지는 DOM
+                                <br/> 트리/렌더(Render)트리의
+                                <br/> 형태로 표현된다.
+                            </li>
+                            <li style="font-size:25px;margin-bottom:40px;">HTML의 텍스트 마크업은
+                                <br/> 브라우저를 통해서 트리 구조로
+                                <br/> 변경되는데 이때 파서의 역할은
+                                <br/>파일을 분석해서 DOM 문서를
+                                <br/>만드는 것이다.
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="float:right">
+                        <img width="494" height="481" data-src="img/HTML5의 차이점14.png">
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <h4>DOM 구조</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">다음의 예제는 'Brett McLaughin'의 '웹 응답에 대해서 DOM를 활용하는 방법' 자료에서 발췌한 것이다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">다음과 같은 HTML 코드를 사용하여 DOM 구조로 변환하도록 한다.
+                        </li>
+                    </ul>
+                    <img width="675" height="380" data-src="img/HTML5의 차이점13.png">
+                </div>
+            </section>
+
+
+            <section>
+                <h4>DOM 구조</h4>
+                <div>
+                    <div style="float:left">
+                        <ul>
+                            <li style="font-size:25px;margin-bottom:40px;">예제를 트리로 변환하면
+                                <br/> 다음과 같다.
+                            </li>
+                            <li style="font-size:25px;margin-bottom:40px;">트리의 하단에서 HTML
+                                <br/>문서의 기본적인 뼈대가 시작되고
+                                <br/>맨 위로 올라갈수록 내부의 세세한
+                                <br/>구성들이 구체화되어 표시된다.
+
+                            </li>
+                            <li style="font-size:25px;margin-bottom:40px;">트리에 있는 모든 것은 가장
+                                <br/> 바깥쪽에서 시작된다. 그리고
+                                <br/> HTML의 엘리먼트(html)를 포함하고 있다.
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="float:right">
+                        <img width="422" height="478" data-src="img/HTML5의 차이점16.png">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h4>DOM 구조</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">모든 가능한 유형의 마크업은 고유의 객체 유형을 가지고 있다.</li>
+                        <li style="font-size:25px;margin-bottom:40px;">객체들을 사용함으로써 웹 브라우저는 객체들의 속성 변경이 가능해진다.</li>
+                        <li style="font-size:25px;margin-bottom:40px;">웹 브라우저에서는 객체 속성들을 이용하여 트리의 모양과 구조 변경이 가능해진다.</li>
+                        <li style="font-size:25px;margin-bottom:40px;">각 HTML 엘리먼트별 노드 타입은 다음과 같다.
+                        </li>
+                    </ul>
+                    <img width="860" height="190" data-src="img/HTML5의 차이점17.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>DOM 구조</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">DOM 트리는 다음과 같이 표현될 수 있다.</li>
+                    </ul>
+                    <img width="609" height="288" data-src="img/HTML5의 차이점18.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>DOM 구조</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">노드 트리는 노드들의 세트로 구성되며, 각각의 노드 사이에는 연결이 존재한다.</li>
+                        <li style="font-size:25px;margin-bottom:40px;">노드 트리에서도 트리의 시작은 루트 노드에서 시작되며, 브랜치는 트리의 가장 낮은 레벨에서 텍스트 노드의 바깥쪽으로 뻗어 나간다</li>
+                    </ul>
+                    <img width="362" height="255" data-src="img/HTML5의 차이점19.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>DOM 구조</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">다음의 HTML 예제를 구성하는 노드들 간의 관계는 다음과 같다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">(html) 노드는 부모 모드를 가지지 않는 루트 노드이며, (head), (body) 노드들의 부모 노드는 (html) 노드이다.</li>
+                    </ul>
+                    <img width="678" height="270" data-src="img/HTML5의 차이점20.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>DOM 레벨</h4>
+
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>DOM 레벨 0</p>
+                        <li style="font-size:25px;margin-bottom:40px;">웹 페이지의 특정 엘리먼트 접근, 특성 교체 API를 네스케이프에서 제공한 것이 시초이며, 일부엘리먼트(link, image, form field)만 접근이 가능하다.
+                        </li>
+                        <p>중급(Intermediate) DOM</p>
+                        <li style="font-size:25px;margin-bottom:40px;">중급 DOM은 W3C의 표준안이 적용되지 않으며, HTML 엘리먼트가 가진 대부분의 특성에 접근가능하다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML 엘리먼트의 CSS 속성은 프로그래밍 기법으로 수정 가능하다.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>DOM 레벨</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>DOM 레벨 1</p>
+                        <li style="font-size:25px;margin-bottom:40px;">CSS1과 HTML4의 성공 이후에 표준화 작업을 걸쳐 W3C에서 발표된 레벨이다. 코어(Core), HTML, XML 문서모델에 대한 내용을 담고 있다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">레벨 1은 XML1.0에 대한 지원과 각 HTML 엘리먼트를 인터페이스로 나타내는 HTML에 대한 지원을 포함한다.
+                        </li>
+
+                        <p>DOM 레벨 2</p>
+                        <li style="font-size:25px;margin-bottom:40px;">현재 DOM 규격이며, DOM 이벤트 모델을 최초 제시하였다. 사용자와의 상호작용을 구현 후 이벤트 처리가 가능해졌다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">개발자가 노드에 적용할 수 있는 네임스페이스 정보들을 찾아서 사용할 수 있도록 레벨 1이 확장되었다. CSS(Cascading Style Sheets)와 이벤트를 다루는 새로운 새 모듈이 추가되었고 트리 구조 생성 개선이 이루어졌다.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>DOM 레벨</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>DOM 레벨 3</p>
+                        <li style="font-size:25px;margin-bottom:40px;">DOM 레벨 3에서는 문서의 객체 생성 지원이 더욱 강화되었고 네임스페이스의 지원도 강화되었으며, 문서 로드와 저장 및 검증을 다루는 모듈이 추가되었고, XSL 변환용 노드에 대한 Xpath, 추가 XML 기술이 도입되었다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">현재 DOM 스크립트의 핵심 담당이지만, 많은 브라우저에서 아직까지 완벽하게 DOM 레벨 3를 지원하지는 못하고 있다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">사용 가능한 사용자 인터페이스 기술이 포함되며, 이를 통해서 문서의 DTD를 조작하는 기능과 보안레벨의 정의가 가능해진다.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>DOM 동작</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">DOM에서의 중요 객체(Object)와 메소드들을 사용하여 다음과 같은 동작을 수행할 수 있다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">웹브라우저는 모든 엘리먼트를 객체로 표현하고 트리 구조 형태로 나타내기 때문에, DOM 객체(Object), 속성(Properties), 메소드(Method) 이용하여 객체화된 엘리먼트의 속성에 접근하거나 변경이 가능하다
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section>
+                <h4>HTML DOM 속성</h4>
+                <div style="float:left;margin-top:25px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:15px;">HTML DOM의 속성은 다음과 같은 요소들로 구성된다.</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">x.innerHTML : x의 텍스트 값</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">x.nodeName : x의 이름</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">x.nodeValue : x의 값</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">x.parentNode : x의 부모 노드</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">x.childNodes : x의 자식 노드</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:40px;">x.attributes : x의 특성 노드</li>
+                        <li style="font-size:25px;margin-bottom:15px;">이와 관련된 대표적인 메소드로는 다음과 같은 예들을 찾을 수 있다.</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">x.getElementById(id) : 특정 id로부터 엘리먼트를 획득</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">x.getElementsByTagName(name) : 특정 태그명을 가지는 모든 엘리먼트 획득</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">x.appendChild(node) : x에 자식 노드 추가</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">x.removeChild(node) : x로부터 자식 노드 제거</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM 속성</h4>
+                <div style="float:left;margin-top:25px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:15px;">HTML DOM 엘리먼트들의 특성으로는 다음과 같은 7개가 있다.
+                        </li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">HTMLElement : 모든 HTML 엘리먼트가 상속하는 'abstract' 인터페이스
+                        </li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">HTMLInputElement : HTML 문서 내의 각 (input) 태그에 대해서, 'select' 객체 생성</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">HTMLSelectElement : HTML 폼의 각 (select) 태그에 대해서, 'select' 객체 생성</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">HTMLDocument : HTML 구조에서의 가장 상위이며 전체 컨텐츠를 보유</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">HTMLAElement : HTML 문서 내의 각 (a ) 태그에 대해서, 'select' 객체 생성
+                        </li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">HTMLOptionElement : HTML 폼의 각 (option) 태그에 대해서, 'select' 객체 생성
+                        </li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">HTMLScriptElement : 스크립트 엘리먼트
+
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 노드</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML DOM에서 각각의 노드들은 하나의 객체이다. 이 객체들은 JavaScript에 의해서 접근, 변경될 수 있는 메소드들과 특성(이름, 값, 타입)을 가진다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">모든 노드들은 트리를 통해서 접근할 수 있으며, 노드의 컨텐츠는 변경하거나 삭제될 수 있고 새로운 노드들은 생성될 수도 있다.
+                        </li>
+                    </ul>
+                    <img width="643" height="354" data-src="img/HTML5의 차이점21.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 노드</h4>
+                <div style="float:left;margin-top:25px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:15px;">사용자가 노드에 접근할 수 있는 방법으로는 다음과 같은 3가지가 있다.
+                        </li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">방법 1. 메소드 getElementById()를 사용</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">방법 2. 메소드 getElementsByTagName()을 사용</li>
+                        <li style="font-size:25px;margin-left:20px;margin-bottom:15px;">방법 3. 노드 트리를 탐색하고 노드 관계를 사용</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 노드</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">메소드 getElementById()를 사용하면 특정 ID를 가지는 엘리먼트를 얻을 수 있다.
+                        </li>
+                        <li style="font-size:25px;margin-bottom:40px;">다음은 id="intro"인 엘리먼트를 얻기 위한 예제이다.
+                        </li>
+                    </ul>
+                    <img width="650" height="250" data-src="img/HTML5의 차이점23.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 노드</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">메소드 getElementsByTagName()을 이용하면 특정 태그 이름을 사용하여 모든 엘리먼트를 얻을 수 있다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">다음의 예는 문서 내의 모든 (p) 엘리먼트의 노드 리스트 값을 얻는 것이다.</li>
+                    </ul>
+                    <img width="650" height="250" data-src="img/HTML5의 차이점24.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 노드</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">DOM 노드 리스트(노드의 배열)를 얻기 위해서 메소드 getElementsByTagName()을 사용할 수 있다.</li>
+                        <li style="font-size:25px;margin-bottom:40px;">다음의 예제에서는 노드 리스트에서 모든 (p) 노드들을 얻은 이후에, 인덱스 번호 중에 하나를 확인해 본다.</li>
+                    </ul>
+                    <img width="650" height="250" data-src="img/HTML5의 차이점25.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 Document 객체</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">브라우저 내의 각 윈도우인 각 HTML 문서(Document)들이 바로 Document 객체이다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">Document 객체는 페이지 내의 모든 HTML 엘리먼트들에 대해서 스크립트를 통해서 액세스 방법을 제공한다.</li>
+                        <li style="font-size:25px;margin-bottom:10px;">Document 객체의 속성</li>
+                    </ul>
+                    <img width="860" height="336" data-src="img/HTML5의 차이점26.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 Document 객체</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:10px;">Document 객체의 메소드 </li>
+                    </ul>
+                    <img width="860" height="355" data-src="img/HTML5의 차이점27.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 Document 객체</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">Body 엘리먼트는 문서의 body 부분을 지원하며, HTML 문서 내에서 'text', 'hyperlinks', 'images', 'tables', 'lists'를 포함하는 모든 컨텐츠를 포함하고 있다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">또한, 다음과 같은 속성과 이벤트를 지원한다. 다음의 표는 속성을 나열하였다.</li>
+                    </ul>
+                    <img width="860" height="263" data-src="img/HTML5의 차이점28.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 Body 객체</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">Body 엘리먼트는 문서의 body 부분을 지원하며, HTML 문서 내에서 'text', 'hyperlinks', 'images', 'tables', 'lists'를 포함하는 모든 컨텐츠를 포함하고 있다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">또한, 다음과 같은 속성과 이벤트를 지원한다. 다음의 표는 속성을 나열하였다.</li>
+                    </ul>
+                    <img width="860" height="263" data-src="img/HTML5의 차이점28.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 Body 객체</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">다음 예제는 Body 객체가 지원하는 백그라운드 색상을 얻기 위한 것이다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">색상이 제시된 (body id="w3s" bgcolor="#E6E6FA")에서 Id를 통해서 색상을 얻기 위해서 'document.getElementById("w3s").bgColor'를 사용하도록 한다.</li>
+                    </ul>
+                    <img width="860" height="320" data-src="img/HTML5의 차이점29.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 Button 객체</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML DOM의 Button 객체는 푸쉬(Push) 버튼을 의미하며 HTML 문서에서의 (button) 태그에서 Button 객체가 생성된다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML button 엘리먼트 내부에서는 텍스트나 이미지와 같은 컨텐츠를 보여주는 작업을 할 수 있는데, 이것이 입력 엘리먼트를 통해서 생성된 버튼과의 차이이다. Button 객체의 속성으로 다음의 표에서 나타낸 것들을 지원한다.</li>
+                    </ul>
+                    <img width="860" height="193" data-src="img/HTML5의 차이점30.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 Image 객체</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML 문서 내의 각 (img) 태그에서 Image 객체가 생성된다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">이미지가 HTML 페이지에 기술적으로 삽입되지는 않는다. 다만 HTML 페이지의 링크에 연결되어 있을 뿐이다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">(img) 태그는 관련 이미지를 위한 공간을 확보한다. </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 Image 객체</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:10px;">Image 객체들의 각각의 속성은 다음과 같다.</li>
+                    </ul>
+                    <img width="816" height="490" data-src="img/HTML5의 차이점31.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 Image 객체</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:10px;">Image 객체가 지원하는 이벤트들은 다음과 같다.</li>
+                    </ul>
+                    <img width="860" height="155" data-src="img/HTML5의 차이점32.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 Image 객체</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:10px;">폭이 250이고 높이가 98인 그림 파일 google_logo2.jpg에 Id와 이름을 부여하고 화면에 나타내기 위해서 다음과 같이 설정하도록 한다.</li>
+                    </ul>
+                    <img width="768" height="436" data-src="img/HTML5의 차이점33.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 Radio 객체</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">Radio 객체는 HTML 폼에서 Radio 버튼을 제공하며 Radio 버튼은 미리 정의된 옵션 세트 중에 하나만을 선택하도록 해 준다.</li>
+                        <li style="font-size:25px;margin-bottom:10px;">다음은 Radio 객체의 속성을 정리한 표이다.</li>
+                    </ul>
+                    <img width="862" height="264" data-src="img/HTML5의 차이점34.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML DOM의 Radio 객체</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">Radio 버튼의 값은 사용자 인터페이스를 통해서는 나타나지 않으며 폼에 값이 들어왔을 때만 Radio 버튼 값 특성이 의미를 가지게 된다. </li>
+                        <li style="font-size:25px;margin-bottom:10px;">다음의 예제는 Radio 버튼을 생성시키는 예제이다. Radio 버튼을 만들기 위해서는 'input type="radio"'와 같이 'input type'을 지정해 주면 된다.</li>
+                    </ul>
+                    <img width="660" height="375" data-src="img/HTML5의 차이점35.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5의 문서 계층 구조</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML5에서 도입된 가장 중요한 점은 HTML 문서가 시맨틱한 구조를 가진다는 점이다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML 문서는 정보 구조를 작성하기 위해서 마크업 언어로 작성된 문서이다. 이러한 목적을 달성하기 위해서 기존 버전의 HTML 구조에서 XML의 구조적인 측면을 더 도입하고, 거기에 한 발 더 나아간 것이 HTML5이다.</li>
+                        <li style="font-size:25px;margin-bottom:10px;">다음의 그림은 XHTML의 문서 구조를 나타낸 것이다.</li>
+                    </ul>
+                    <img width="442" height="310" data-src="img/HTML5의 차이점36.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 주요 태그</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>header</p>
+                        <li style="font-size:25px;margin-bottom:30px;">새로운 태그인 (header)는 페이지 타이틀이나 로고와 같은 도입 엘리먼트들로 구성될 수 있다. </li>
+                        <p>nav</p>
+                        <li style="font-size:25px;margin-bottom:30px;">(nav) 태그는 네비게이션적인 엘리먼트들을 포함하기 위해서 사용한다.</li>
+                        <p>section</p>
+                        <li style="font-size:25px;margin-bottom:30px;">(section) 태그는 문서 내에서 제목을 붙여서 컨텐츠 그룹을 묶기 위해서 사용되며 여러 가지 종류의 마크업과 다중 섹션들이 중첩되어 사용될 수 있다. </li>
+                        <p>article</p>
+                        <li style="font-size:25px;margin-bottom:30px;">(article) 은 웹상의 실제 내용을 알려 준다. 블로그, 잡지 등에서의 독립적인 엔트리이다.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 주요 태그</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>aside</p>
+                        <li style="font-size:25px;margin-bottom:30px;">(aside)는 주변의 컨텐츠와 관련된 내용을 가리킨다. 좌우측의 사이드바 역할을 담당한다.</li>
+                        <p>footer</p>
+                        <li style="font-size:25px;margin-bottom:30px;">(footer)는 누가 페이지를 작성했는지 등에 대한 'copyright' 정보, 문서와 관련된 정보 등과 같은 주 컨텐츠를 보좌하기 위한 부수적인 정보들을 포함한다.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 웹 폼 살펴보기</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">웹 양식을 지원하기 위한 태그를 통해서 개발자는 쉽게 웹에서 UI 작업을 할 수 있다. 이러한 역할을 수행하는 태그를 폼 태그(Form Tag)라고 한다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">폼 태그는 HTML에서 사용자의 입력을 위해서 제공된다. </li>
+                    </ul>
+                    <img width="860" height="299" data-src="img/HTML5의 차이점37.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 웹 폼 살펴보기</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>datetime, week, month, date, time</p>
+                        <li style="font-size:25px;margin-bottom:40px;">날짜를 구성하는 요소들을 입력 받기 위한 양식이다. 이들은 날짜와 관련된 타입들을 나타낸다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">날짜 입력으로서 몇 주, 몇 달, 며칠, 몇 시이라는 값을 입력받을 수 있다. </li>
+                    </ul>
+                    <img width="331" height="216" data-src="img/HTML5의 차이점38.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 웹 폼 살펴보기</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>email</p>
+                        <li style="font-size:25px;margin-bottom:40px;">'email'을 받아들이는 'input' 타입이며, 'example@example.com'과 같이 이메일 주소를 제공되는 빈 칸에 넣는다. 'email' 타입을 지원하지 않는 웹브라우저는 'text' 타입으로 인식을 할 수 있다.</li>
+                    </ul>
+                    <img width="860" height="358" data-src="img/HTML5의 차이점39.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 웹 폼 살펴보기</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>url</p>
+                        <li style="font-size:25px;margin-bottom:40px;">'url'을 받아들이는 input 타입이며, 입력되는 URL 주소 형식이 맞는지 검사하여 형식에 맞지 않을 경우 메시지를 띄우게 된다.</li>
+                    </ul>
+                    <img width="860" height="358" data-src="img/HTML5의 차이점40.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 웹 폼 살펴보기</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>color</p>
+                        <li style="font-size:25px;margin-bottom:40px;">'color' 타입은 사용자가 사용하기를 원하는 색상 값을 입력할 수 있는 방법을 제공한다.</li>
+                    </ul>
+                    <img width="860" height="358" data-src="img/HTML5의 차이점41.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 웹 폼 살펴보기</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>search</p>
+                        <li style="font-size:25px;margin-bottom:40px;">여기서는 'search' 타입을 지원하며, 'text' 타입과 유사하다. 일반 브라우저에서 검색을 위한 입력 창 부분을 생각하도록 한다.</li>
+                    </ul>
+                    <img width="860" height="358" data-src="img/HTML5의 차이점42.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 웹 폼 살펴보기</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>number</p>
+                        <li style="font-size:25px;margin-bottom:40px;">입력 값의 범위를 한정하고 그 범위 내에서 숫자가 입력될 수 있다.</li>
+                        <li style="font-size:25px;margin-bottom:40px;">여러 명을 클라이언트들이 일정한 범위의 숫자 내에서 투표를 할 때 유용하게 사용될 수 있다. 범위는 min과 max 값을 통해서 사용자가 원하는 대로 조정할 수 있다.</li>
+                    </ul>
+                    <img width="860" height="358" data-src="img/HTML5의 차이점43.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 웹 폼 살펴보기</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>range</p>
+                        <li style="font-size:25px;margin-bottom:40px;">'range' 타입은 입력 형태를 슬라이드 컨트롤로 나타내 주며 슬라이드 값에 따라 1부터 100까지의 값 범위를 주고 해당 값을 선택하는 예제를 수행한 결과이다. 마우스를 이동하여 1부터 100까지의 값 중 하나를 선택할 수 있다.</li>
+                    </ul>
+                    <img width="860" height="358" data-src="img/HTML5의 차이점44.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 추가 엘리먼트</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>HTML5에서 많은 기능들과 더불어 몇 가지 엘리먼트들도 추가되었다.</p>
+                    </ul>
+                    <img width="860" height="154" data-src="img/HTML5의 차이점45.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 추가 엘리먼트</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>Keygen 엘리먼트</p>
+                        <li style="font-size:25px;margin-bottom:40px;">'keygen' 엘리먼트는 폼을 전송하고자 할 때 키를 생성하는 컨트롤이다. 폼(Form)이 전송되면 비밀키와 공개 키를 생성하여 비밀 키는 Client 측에 저장하고 공개키는 서버에 전송한다.</li>
+                    </ul>
+                    <img width="820" height="370" data-src="img/HTML5의 차이점46.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 추가 엘리먼트</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>Output 엘리먼트</p>
+                        <li style="font-size:25px;margin-bottom:40px;">'output Element'는 결과를 내보내기 위해서 사용한다. Input 요소가 폼 입력을 담당한다면 output 요소는 폼 출력을 담당한다.</li>
+                    </ul>
+                    <img width="860" height="259" data-src="img/HTML5의 차이점47.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 추가 엘리먼트</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <p>meter 엘리먼트</p>
+                        <li style="font-size:25px;margin-bottom:40px;">'meter' 엘리먼트는 한정된 범위 내의 값을 나타내고 싶을 때 사용한다. 따라서 한정된 범위가 아닌 최소값과 최대값을 지정할 수 없는 곳에서는 사용이 불가능하다.</li>
+                    </ul>
+                    <img width="860" height="300" data-src="img/HTML5의 차이점48.png">
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 추가 엘리먼트</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML5에서 지원하는 다양한 웹 폼 요소들이 실제로는 각 브라우저마다 어떻게 실행되는지 확인하는 것도 중요하다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">웹 폼 확인 서비스를 제공하는 사이트 페이지</li>
+                        <li style="font-size:25px;margin-bottom:40px;">(http://miketaylr.com/code/input-type-attr.html)가 있으며, 이 사이트의 소스를 활용하여 자신만의 확인 방법을 만들 수도 있다.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 템플릿</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML5가 W3C에서는 아직도 논의가 계속해서 진행되고 있지만, 개발자의 활동이 활성화되면서 많은 웹 사이트에 적용되고 있다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML5가 기존의 HTML 언어를 발전시켜서 플래시와 같은 외부의 플러그인의 도움 없이도 서비스를 제공할 수 있다는 장점을 가지고 있고, 스크립트를 대체시킬만한 다양한 마크-업(Mark-up)인 태그를 사용하게 됨으로써 복잡한 구현 이슈를 많이 최소화시켰기 때문이다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML5는 디바이스에 독립적이기 때문에 요즘과 같이 다양한 플랫폼이 존재할 때 웹 어플리케이션 개발 시 매우 유용한 도구로 사용된다. </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 템플릿</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML5의 시대가 열리는데 최고의 기여를 한 애플의 최고경영자(CEO) 스티브 잡스는 이미 이전에 아이폰과 아이패드에서 '플래시'를 사용하지 않을 것이라고 밝혔고, 이를 통해서 HTML5에 대한 관심이 급격히 증가하게 되었다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">"HTML5로 플래시를 대체할 수 있다"며 "플래시는 최적화된 기술이 아니고, 앞으로는 대부분 표준 기술인 HTML5를 쓰는 방향으로 가게 될 것"이라고 선언했기 때문에, 애플에 이어 구글·마이크로소프트 등도 빠르게 HTML5를 속속 도입하는 결정을 내렸다.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h4>HTML5 템플릿</h4>
+                <div style="float:left;margin-top:20px;">
+                    <ul>
+                        <li style="font-size:25px;margin-bottom:40px;">HTML5 템플릿 'Elegant press'를 구성하는 소스들의 구조는 다음과 같다. </li>
+                        <li style="font-size:25px;margin-bottom:40px;">'Elegant press' 소스는 기본 문서인 'index.html'를 포함해서 'license.html', 'contact.html', 'gallery.html‘, 'portfolio.html', 'right_sidebar.html', 'typo.html' 이외에 각종 이미지를 포함하고 있는 'images' 디렉토리, JavaScript를 포함하는 'scripts' 디렉토리, 웹스타일을 정의한 'styles' 디렉토리가 존재한다.</li>
+                    </ul>
+                    <img width="523" height="270" data-src="img/HTML5의 차이점49.png">
+                </div>
+            </section>
+
+
+
+
 
 
 
@@ -447,7 +1190,6 @@
     <script src="../reveal/js/reveal.js"></script>
 
     <script>
-
         // Full list of configuration options available at:
         // https://github.com/hakimel/reveal.js#configuration
         Reveal.initialize({
@@ -457,17 +1199,37 @@
             center: true,
             transition: 'slide', // none/fade/slide/convex/concave/zoom
             // Optional reveal.js plugins
-            dependencies: [
-                { src: '../reveal/lib/js/classList.js', condition: function () { return !document.body.classList; } },
-                { src: '../reveal/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-                { src: '../reveal/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-                { src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
-                { src: '../reveal/plugin/zoom-js/zoom.js', async: true },
-                { src: '../reveal/plugin/notes/notes.js', async: true }
-            ]
+            dependencies: [{
+                src: '../reveal/lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: '../reveal/plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: '../reveal/plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: '../reveal/plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: '../reveal/plugin/zoom-js/zoom.js',
+                async: true
+            }, {
+                src: '../reveal/plugin/notes/notes.js',
+                async: true
+            }]
         });
-
     </script>
 
 </body>
+
 </html>
