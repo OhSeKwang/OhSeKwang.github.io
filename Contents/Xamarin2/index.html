@@ -78,7 +78,7 @@
             
             	<section data-markdown>
 					<script type="text/template">
-						## Good Stay ▶ Splash page ▶ TabbedPage
+						Good Stay ▶ Splash page ▶ TabbedPage
 						```
                         
 <?xml version="1.0" encoding="utf-8" ?>
@@ -98,7 +98,7 @@
             
                       	<section data-markdown>
 					<script type="text/template">
-						## Good Stay ▶ Splash page ▶ TabbedPage
+						Good Stay ▶ Splash page ▶ TabbedPage
 						```
                         
 public partial class SplashPage : ContentPage
@@ -135,7 +135,7 @@ public partial class SplashPage : ContentPage
             
                       	<section data-markdown>
 					<script type="text/template">
-						## Good Stay ▶ Splash page ▶ TabbedPage
+						Good Stay ▶ Splash page ▶ TabbedPage
 						```
                         
 public partial class MainPage : TabbedPage
@@ -178,6 +178,345 @@ public partial class MainPage : TabbedPage
                         </div>
                     </div>
                 </section>
+            
+            
+                <section data-markdown>
+					<script type="text/template">
+						 Good Stay ▶ Splash page ▶ Master Detail</br>
+                         GoodStay.Droid프로젝트 Activity추가 ▶ SplashActivity
+						```
+namespace GoodStay.Droid
+{
+    [Activity(Label = "GoodStay", Icon = "@drawable/icon", Theme = "@style/Theme.Splash", MainLauncher = true, NoHistory = true)]
+    public class SplashActivity : Activity
+    {
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            //애니메이션 및 API 호출 가능
+            System.Threading.Thread.Sleep(1000);
+            this.StartActivity(typeof(MainActivity));
+        }
+    }
+}
+
+						```
+					</script>
+				</section>
+            
+                <section data-markdown>
+					<script type="text/template">
+						 Good Stay ▶ Splash page ▶ Master Detail</br>
+                         GoodStay.Droid프로젝트 Resources Styles 테마 추가
+						```
+<style name="Theme.Splash" parent="android:Theme">
+    <item name="android:windowBackground">@drawable/splash</item>
+    <item name="android:windowNoTitle">true</item>
+</style>
+
+						```
+					</script>
+				</section>
+            
+            
+                <section data-markdown>
+					<script type="text/template">
+						 Good Stay ▶ Splash page ▶ Master Detail</br>
+                         GoodStay.Droid프로젝트 MainActivity 소스 수정
+						```
+[Activity(Label = "GoodStay", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+{
+    protected override void OnCreate(Bundle bundle)
+    {
+        TabLayoutResource = Resource.Layout.Tabbar;
+        ToolbarResource = Resource.Layout.Toolbar;
+
+        base.OnCreate(bundle);
+
+        global::Xamarin.Forms.Forms.Init(this, bundle);
+        LoadApplication(new App());
+    }
+}
+
+						```
+					</script>
+				</section>
+            
+                       <section data-markdown>
+					<script type="text/template">
+						 Good Stay ▶ Splash page ▶ Master Detail</br>
+                         GoodStay(Portable) MainPage 추가
+						```
+public partial class MainPage : MasterDetailPage
+{
+    MenuPage menuPage;
+    public MainPage()
+    {
+        InitializeComponent();
+        menuPage = new MenuPage(this);
+        Master = menuPage;
+        Detail = new NavigationPage(new MainListPage()) { BarBackgroundColor = App.BrandColor, BarTextColor = Color.White };
+    }
+}
+
+						```
+					</script>
+				</section>
+            
+                     <section data-markdown>
+					<script type="text/template">
+						 Good Stay ▶ Splash page ▶ Master Detail</br>
+                         GoodStay(Portable) MenuPage 추가
+						```
+public class MenuTableView : TableView
+{
+}
+
+public class MenuPage : ContentPage
+{
+    public ListView Menu { get; set; }
+    MainPage mainPage;
+    TableView tableView;
+
+    public MenuPage(MainPage mainPage)
+    {
+        Title = "menu";
+        this.mainPage = mainPage;
+
+        var layout = new StackLayout
+        {
+            Spacing = 0,
+            VerticalOptions = LayoutOptions.FillAndExpand,
+            BackgroundColor = Color.FromHex("#FF9800"),
+        };
+        var section = new TableSection()
+        {
+            new MenuCell {Text = "Home",Host= this,ImageSrc="home_black.png"},
+            new MenuCell {Text = "Favorites",Host= this,ImageSrc="star_black.png"},
+            new MenuCell {Text = "About",Host= this,ImageSrc="about_black.png"},
+        };
+
+        var root = new TableRoot() { section };
+
+        tableView = new MenuTableView()
+        {
+            Root = root,
+            Intent = TableIntent.Data,
+            BackgroundColor = Color.White,
+
+        };
+
+        var settingView = new SettingsUserView();
+
+        layout.Children.Add(settingView);
+        layout.Children.Add(tableView);
+        Content = layout;
+    }
+
+    NavigationPage home, About, favorites;
+
+    public void Selected(string item)
+    {
+
+        switch (item)
+        {
+            case "Home":
+                DisplayAlert("HOME", "HOME", "HOME");
+                break;
+            case "숙박정보조회":
+                DisplayAlert("Favorites", "Favorites", "Favorites");
+                break;
+            case "About":
+                DisplayAlert("About", "About", "About");
+                break;
+        };
+        mainPage.IsPresented = false;  // close the slide-out
+    }
+}
+
+						```
+					</script>
+				</section>
+            
+            
+                            <section data-markdown>
+					<script type="text/template">
+						 Good Stay ▶ Splash page ▶ Master Detail</br>
+                         GoodStay(Portable) Style ▶ MenuCell Class 추가
+						```
+/// <summary>
+/// Master Menu를 관리 합니다.
+/// </summary>
+public class MenuCell : ViewCell
+{
+    /// <summary>
+    /// Text를 지정합니다.
+    /// </summary>
+    public string Text
+    {
+        get { return label.Text; }
+        set { label.Text = value; }
+    }
+    Label label;
+
+    /// <summary>
+    /// 이미지를 지정합니다.
+    /// </summary>
+    public ImageSource ImageSrc
+    {
+        get { return image.Source; }
+        set { image.Source = value; }
+    }
+    Image image;
+
+    /// <summary>
+    /// MenuPage 지정 합니다.
+    /// </summary>
+    public MenuPage Host { get; set; }
+
+    /// <summary>
+    /// MenuCell 정의 합니다.
+    /// </summary>
+    public MenuCell()
+    {
+        image = new Image
+        {
+            HeightRequest = 20,
+            WidthRequest = 20,
+        };
+
+        image.Opacity = 0.5;
+
+
+        label = new Label
+        {
+
+            YAlign = TextAlignment.Center,
+            TextColor = Color.Gray,
+        };
+
+
+        var layout = new StackLayout
+        {
+            BackgroundColor = Color.White,
+            Padding = new Thickness(20, 0, 0, 0),
+            Orientation = StackOrientation.Horizontal,
+            Spacing = 20,
+            Children = { image, label }
+        };
+        View = layout;
+    }
+
+    /// <summary>
+    /// OnTapped Event 
+    /// </summary>
+    protected override void OnTapped()
+    {
+        base.OnTapped();
+        Host.Selected(label.Text);
+    }
+}
+
+						```
+					</script>
+				</section>  
+            
+               <section data-markdown>
+					<script type="text/template">
+						 Good Stay ▶ Splash page ▶ Master Detail</br>
+                         GoodStay(Portable) Style ▶SettingsUserView Class추가
+						```
+public class SettingsUserView : ContentView
+{
+    public SettingsUserView()
+    {
+        var activityIndicator = new ActivityIndicator
+        {
+            Color = Color.Black,
+        };
+        var circleImage = new CircleImage
+        {
+            BorderColor = Color.White,
+            BorderThickness = 2,
+            HeightRequest = 80,
+            WidthRequest = 80,
+            Aspect = Aspect.AspectFill,
+            HorizontalOptions = LayoutOptions.Center,
+            VerticalOptions = LayoutOptions.Center,
+            Source =
+                new UriImageSource { Uri = new Uri("http://ohsekwang.github.io/Contents/Xamarin2/img/user.png"), CacheValidity = TimeSpan.FromDays(15) },
+        };
+
+        var label = new Label()
+        {
+            Text = "Oh Se Kwang",
+            TextColor = Color.White,
+            HorizontalOptions = LayoutOptions.Center,
+            VerticalOptions = LayoutOptions.Center,
+        };
+
+        Content = new StackLayout()
+        {
+            Padding = new Thickness(0, 10, 0, 0),
+            Spacing = 15,
+            Orientation = StackOrientation.Vertical,
+            Children = {circleImage,
+            label,
+            activityIndicator,
+            }
+        };
+    }
+}
+
+						```
+					</script>
+				</section>  
+            
+            
+                            <section data-markdown>
+					<script type="text/template">
+						 Good Stay ▶ Splash page ▶ Master Detail</br>
+                         GoodStay(Portable) Style ▶ MainListPage 추가
+						```
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoodStay.View.MainListPage">
+  <Label Text="홈 화면 디자인 추가하기" VerticalOptions="Center" HorizontalOptions="Center" />
+</ContentPage>
+
+						```
+					</script>
+				</section>
+            
+            
+              <section>
+                    <p style="font-size:30px">Good Stay ▶ Splash page </p>
+                    <div>
+                        <div style="float:left">
+                            <img width="400" height="600" data-src="img/MasterDetail0.png">
+                        </div>
+                        <div style="float:right">
+                            <img width="400" height="600" data-src="img/MasterDetail1.png">
+                        </div>
+                    </div>
+                </section>
+            
+                   <section>
+                    <p style="font-size:30px">Good Stay ▶ Splash page </p>
+                    <div>
+                        <div style="float:left">
+                            <img width="400" height="600" data-src="img/MasterDetail2.png">
+                        </div>
+                        <div style="float:right">
+                            <img width="400" height="600" data-src="img/MasterDetail1.png">
+                        </div>
+                    </div>
+                </section>
+            
+            
+            
 
 
             
