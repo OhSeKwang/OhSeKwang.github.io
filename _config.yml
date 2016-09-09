@@ -13,6 +13,7 @@ github_username:  OhSeKwang
 # Build settings
 markdown: kramdown
 
+
 # Other options
 permalink: blog/:year/:month/:title
 job.title: "Assistant Professor"
