@@ -1,16 +1,25 @@
-- title: "About"
-  href: "/about/"
+- title: "C#6.0"
+  href: "/six/"
+
+- title: "ASP.NET MVC"
+  href: "/mvc/"
+
+- title: "WPF"
+  href: "/wpf/"
+
+- title: "Xarmin"
+  href: "/xarmin/"
+  
+- title: "Design Patterns"
+  href: "/designPatterns/"
+
+  
+
+- title: "Travel"
+  href: "/travel/"
 
 - title: "Blog"
   href: "/blog/"
 
-- title: "CV"
-  href: "/cv/"
-
-- title: "Miscellany"
-  href: "/miscellany/"
-  subcategories:
-    - subtitle: "Item 1"
-      subhref: "/miscellany/item-1/"
-    - subtitle: "Item 2"
-      subhref: "/miscellany/item-2/"
+- title: "About"
+  href: "/about/"
